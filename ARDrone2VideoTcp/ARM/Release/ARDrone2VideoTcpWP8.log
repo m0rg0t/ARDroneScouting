@@ -1,5 +1,5 @@
-﻿Построение начато 22.09.2013 13:45:41.
-     1>Проект "C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2VideoTcp\ARDrone2VideoTcpWP8.vcxproj" в узле 2 (целевые объекты Rebuild).
+﻿Построение начато 22.09.2013 21:17:17.
+     1>Проект "C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2VideoTcp\ARDrone2VideoTcpWP8.vcxproj" в узле 3 (целевые объекты Rebuild).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\bin\x86_arm\CL.exe /c /AI"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata" /Zi /ZW /nologo /W1 /WX- /O2 /Oy- /GL /D _LIB /D NDEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"ARM\Release\ARDrone2VideoTcpWP8.pch" /Fo"ARM\Release\\" /Fd"ARM\Release\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\WPSDK\WP80\lib\arm\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.0\Windows Metadata\Windows.winmd" /analyze- /errorReport:prompt pch.cpp
          pch.cpp
@@ -19,4 +19,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:21.79
+Затраченное время: 00:00:17.42

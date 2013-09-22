@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Navigation;
 using ARDrone2Client.Common;
 using ARDrone2Client.Common.ViewModel;
 using Windows.UI.Core;
+using Microsoft.WindowsAzure.MobileServices;
 
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=234227
 
@@ -29,6 +30,11 @@ namespace ARDrone2.Sample
     sealed partial class App : Application
     {
         private MediaExtensionManager m = new MediaExtensionManager();
+
+        public static MobileServiceClient MobileService = new MobileServiceClient(
+            "https://arscouting.azure-mobile.net/",
+            "CXRhaFXJblrchNLEZqdKYHYPLLXEog18"
+        );
 
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code

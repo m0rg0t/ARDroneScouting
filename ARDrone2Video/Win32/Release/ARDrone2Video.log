@@ -1,5 +1,5 @@
-﻿Построение начато 22.09.2013 13:45:58.
-     1>Проект "C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2Video\ARDrone2Video.vcxproj" в узле 2 (целевые объекты Rebuild).
+﻿Построение начато 22.09.2013 21:17:30.
+     1>Проект "C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2Video\ARDrone2Video.vcxproj" в узле 3 (целевые объекты Rebuild).
        Файл проекта содержит ToolsVersion="12.0". Данный набор инструментов является неизвестным или отсутствует. Для устранения этой ошибки можно установить для данного набора инструментов соответствующую версию .NET Framework. Считается, что проект содержит ToolsVersion="4.0".
      1>Midl:
          C:\Program Files (x86)\Windows Kits\8.0\bin\x86\midl.exe /metadata_dir "C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /winrt /W1 /nologo /char signed /env win32 /h "ARDrone2Video_h.h" /tlb "Win32\Release\ARDrone2Video.tlb" /enum_class /ns_prefix ARDrone2Video.idl 
@@ -33,10 +33,10 @@
          oaidl.idl
          MIDLRT Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\objidl.idl
          objidl.idl
-         Processing C:\Users\M0RG0_~1\AppData\Local\Temp\ARDrone2Video.idl-529a6550
-         ARDrone2Video.idl-529a6550
-         Processing .\Windows.Media.idl-c1037eed
-         Windows.Media.idl-c1037eed
+         Processing C:\Users\M0RG0_~1\AppData\Local\Temp\ARDrone2Video.idl-837712a5
+         ARDrone2Video.idl-837712a5
+         Processing .\Windows.Media.idl-59d2494f
+         Windows.Media.idl-59d2494f
          Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\inspectable.idl
          inspectable.idl
          Processing C:\Program Files (x86)\Windows Kits\8.0\Include\shared\wtypes.idl
@@ -55,10 +55,10 @@
          AsyncInfo.idl
          Processing C:\Program Files (x86)\Windows Kits\8.0\Include\winrt\EventToken.idl
          EventToken.idl
-         Processing .\Windows.Foundation.idl-3104e705
-         Windows.Foundation.idl-3104e705
-         Processing .\IVectorChangedEventArgs.idl-8e64fc29
-         IVectorChangedEventArgs.idl-8e64fc29
+         Processing .\Windows.Foundation.idl-b406f841
+         Windows.Foundation.idl-b406f841
+         Processing .\IVectorChangedEventArgs.idl-e8778472
+         IVectorChangedEventArgs.idl-e8778472
          Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\oaidl.idl
          oaidl.idl
          Processing C:\Program Files (x86)\Windows Kits\8.0\Include\um\objidl.idl
@@ -90,4 +90,4 @@
 
 Построение успешно завершено.
 
-Затраченное время: 00:00:24.01
+Затраченное время: 00:00:20.37
