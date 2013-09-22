@@ -12,3 +12,6 @@ C:\Users\aldanvy\Documents\Git\ARDroneSDK\ARDrone2.Client.WP8\Bin\x86\Debug\ARDr
 C:\Users\aldanvy\Documents\Git\ARDroneSDK\ARDrone2.Client.WP8\Bin\x86\Debug\ARDrone2.Client.WP8.pdb
 C:\Users\aldanvy\Documents\Git\ARDroneSDK\ARDrone2.Client.WP8\Bin\x86\Debug\ARDrone2VideoTcpWrapper.winmd
 C:\Users\aldanvy\Documents\Git\ARDroneSDK\ARDrone2.Client.WP8\Bin\x86\Debug\ARDrone2VideoTcpWrapper.pdb
+C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2.Client.WP8\obj\x86\Debug\ARDrone2.Client.WP8.csprojResolveAssemblyReference.cache
+C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2.Client.WP8\obj\x86\Debug\ARDrone2.Client.WP8.dll
+C:\Users\m0rg0_000\Documents\GitHub\ARDroneScouting\ARDrone2.Client.WP8\obj\x86\Debug\ARDrone2.Client.WP8.pdb

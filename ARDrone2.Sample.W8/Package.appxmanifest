@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ARDrone2.Sample.App">
-      <VisualElements DisplayName="ARDrone2 Sample App" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="ARDrone2 Sample App" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="ARDrone scouting and squad control" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="ARDrone scouting and squad control" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="logoOnly" />
         <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FFFFFF" />
         <InitialRotationPreference>

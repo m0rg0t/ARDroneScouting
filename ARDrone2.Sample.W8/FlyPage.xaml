@@ -5,6 +5,7 @@
     xmlns:local="using:ARDrone2.Sample"
     xmlns:client="using:ARDrone2Client.Windows.Input"
     xmlns:common="using:ARDrone2.Sample.Common"
+    xmlns:bm="using:Bing.Maps" 
     xmlns:input="using:ARDrone2Client.Windows.Input"
     xmlns:converters="using:ARDrone2Client.Windows.ViewModel"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -30,7 +31,18 @@
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <MediaElement  x:Name="arDroneMediaElem" RealTimePlayback="True" Grid.ColumnSpan="2" Grid.RowSpan="3" Width="1280" Height="720"/>
+        
+        <!--video from drone-->
+        <MediaElement  x:Name="arDroneMediaElem" RealTimePlayback="True" Grid.Column="0" Grid.RowSpan="3" Width="Auto" Height="720"/>
+
+        <bm:Map x:Name="ControlMap" MinHeight="400" Grid.Column="1" Grid.RowSpan="3" Width="Auto"
+						Credentials="AleF-exBAWd-gM9i3JJ0yWTEBsTGK2cHob09pmgpnHc5MCl3XjMhWToUK6MlmgFx" 
+						ZoomLevel="10" Heading="14" Margin="0,80">
+            <bm:Map.Center>
+                <bm:Location Longitude="37.625911" Latitude="55.775039"/>
+            </bm:Map.Center>
+        </bm:Map>
+
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="10,0,0,0">
             <TextBlock FontWeight="SemiBold" Text="Battery" Width="80" Style="{StaticResource PageSubheaderTextStyle}" />
             <TextBlock x:Name="DroneBattery" Width="50" Text="{Binding NavigationDataViewModel.BatteryPercentage}" Style="{StaticResource PageSubheaderTextStyle}" />
@@ -74,7 +86,7 @@
                 x:Name="YawGazJoystick" 
                 BorderElipseColor="Red"
                 StickColor="Black"
-                Margin="0,0,80,80"
+                Margin="0,0,60,60"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Bottom" 
                 Height="200" 
@@ -84,7 +96,7 @@
                 x:Name="RollPitchJoystick" 
                 BorderElipseColor="Green"
                 StickColor="Black"
-                Margin="80,0,0,80"
+                Margin="60,0,0,60"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Bottom" 
                 Height="200" 

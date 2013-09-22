@@ -33,16 +33,20 @@ namespace ARDrone2Client.Common.Workers
         
         public override async void Start()
         {
-            udpClient = new DatagramSocket();
-         
-            // Connect To Drone
-            udpClient.MessageReceived += MessageReceived;
-            await udpClient.BindServiceNameAsync(_ServiceName);
-            await udpClient.ConnectAsync(new HostName(DroneClient.Host), _ServiceName);
-            udpWriter = new DataWriter(udpClient.OutputStream);
+            //try
+            //{
+                udpClient = new DatagramSocket();
 
-            SendKeepAliveSignal();
-            _TimeoutStopWatch = Stopwatch.StartNew();
+                // Connect To Drone
+                udpClient.MessageReceived += MessageReceived;
+                await udpClient.BindServiceNameAsync(_ServiceName);
+                await udpClient.ConnectAsync(new HostName(DroneClient.Host), _ServiceName);
+                udpWriter = new DataWriter(udpClient.OutputStream);
+
+                SendKeepAliveSignal();
+                _TimeoutStopWatch = Stopwatch.StartNew();
+            //}
+            //catch { };
         }
 
         public override void Stop()

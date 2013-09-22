@@ -120,26 +120,127 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
             }
         }
 
-        private object Activate_0_LayoutAwarePage() { return new global::ARDrone2.Sample.Common.LayoutAwarePage(); }
+        private object Activate_0_ViewModelLocator() { return new global::AR.Drone2.Sample.W8.ViewModel.ViewModelLocator(); }
 
-        private object Activate_2_BooleanToVisibilityConverter() { return new global::ARDrone2.Sample.Common.BooleanToVisibilityConverter(); }
+        private object Activate_1_MainViewModel() { return new global::AR.Drone2.Sample.W8.ViewModel.MainViewModel(); }
 
-        private object Activate_3_ConfigurationPage() { return new global::ARDrone2.Sample.ConfigurationPage(); }
+        private object Activate_3_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
 
-        private object Activate_4_StringToFloatConverter() { return new global::ARDrone2Client.Windows.ViewModel.StringToFloatConverter(); }
+        private object Activate_4_LayoutAwarePage() { return new global::ARDrone2.Sample.Common.LayoutAwarePage(); }
 
-        private object Activate_5_JoystickControl() { return new global::ARDrone2Client.Windows.Input.JoystickControl(); }
+        private object Activate_6_BooleanToVisibilityConverter() { return new global::ARDrone2.Sample.Common.BooleanToVisibilityConverter(); }
 
-        private object Activate_6_FlyPage() { return new global::ARDrone2.Sample.FlyPage(); }
+        private object Activate_7_ConfigurationPage() { return new global::ARDrone2.Sample.ConfigurationPage(); }
 
-        private object Activate_7_MainPage() { return new global::ARDrone2.Sample.MainPage(); }
+        private object Activate_8_StringToFloatConverter() { return new global::ARDrone2Client.Windows.ViewModel.StringToFloatConverter(); }
 
-        private void MapAdd_1_IObservableMap(object instance, object key, object item)
+        private object Activate_9_Map() { return new global::Bing.Maps.Map(); }
+
+        private object Activate_10_MapUIElementCollection() { return new global::Bing.Maps.MapUIElementCollection(); }
+
+        private object Activate_11_Location() { return new global::Bing.Maps.Location(); }
+
+        private object Activate_19_MapTileLayerCollection() { return new global::Bing.Maps.MapTileLayerCollection(); }
+
+        private object Activate_20_MapTileLayer() { return new global::Bing.Maps.MapTileLayer(); }
+
+        private object Activate_21_LocationRectCollection() { return new global::Bing.Maps.LocationRectCollection(); }
+
+        private object Activate_22_LocationRect() { return new global::Bing.Maps.LocationRect(); }
+
+        private object Activate_23_MapShapeLayerCollection() { return new global::Bing.Maps.MapShapeLayerCollection(); }
+
+        private object Activate_24_MapShapeLayer() { return new global::Bing.Maps.MapShapeLayer(); }
+
+        private object Activate_25_MapShapeCollection() { return new global::Bing.Maps.MapShapeCollection(); }
+
+        private object Activate_27_TrafficIncidentPushpinOptions() { return new global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions(); }
+
+        private object Activate_28_DirectionsUIEventManager() { return new global::Bing.Maps.Directions.DirectionsUIEventManager(); }
+
+        private object Activate_29_DirectionsRenderOptions() { return new global::Bing.Maps.Directions.DirectionsRenderOptions(); }
+
+        private object Activate_33_JoystickControl() { return new global::ARDrone2Client.Windows.Input.JoystickControl(); }
+
+        private object Activate_34_FlyPage() { return new global::ARDrone2.Sample.FlyPage(); }
+
+        private object Activate_35_MainPage() { return new global::ARDrone2.Sample.MainPage(); }
+
+        private object Activate_36_DirectionsPolylineRenderOptions() { return new global::Bing.Maps.Directions.DirectionsPolylineRenderOptions(); }
+
+        private object Activate_37_DirectionsPushpinRenderOptions() { return new global::Bing.Maps.Directions.DirectionsPushpinRenderOptions(); }
+
+        private object Activate_38_Pushpin() { return new global::Bing.Maps.Pushpin(); }
+
+        private object Activate_39_MapItemsControl() { return new global::Bing.Maps.MapItemsControl(); }
+
+        private object Activate_40_VenueFloorDataSource() { return new global::Bing.Maps.VenueMaps.VenueFloorDataSource(); }
+
+        private object Activate_45_LocationCollection() { return new global::Bing.Maps.LocationCollection(); }
+
+        private object Activate_51_RouteLegDataSource() { return new global::Bing.Maps.Directions.RouteLegDataSource(); }
+
+        private object Activate_52_TransitRouteDataSource() { return new global::Bing.Maps.Directions.TransitRouteDataSource(); }
+
+        private object Activate_53_RouteLegDataTemplateSelector() { return new global::Bing.Maps.Directions.RouteLegDataTemplateSelector(); }
+
+        private object Activate_54_DirectionsContainerSelector() { return new global::Bing.Maps.Directions.DirectionsContainerSelector(); }
+
+        private void MapAdd_5_IObservableMap(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
+        }
+
+        private void VectorAdd_10_MapUIElementCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.UIElement>)instance;
+            var newItem = (global::Windows.UI.Xaml.UIElement)item;
+            collection.Add(newItem);
+        }
+
+        private void VectorAdd_19_MapTileLayerCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.MapTileLayer>)instance;
+            var newItem = (global::Bing.Maps.MapTileLayer)item;
+            collection.Add(newItem);
+        }
+
+        private void VectorAdd_21_LocationRectCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.LocationRect>)instance;
+            var newItem = (global::Bing.Maps.LocationRect)item;
+            collection.Add(newItem);
+        }
+
+        private void VectorAdd_23_MapShapeLayerCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.MapShapeLayer>)instance;
+            var newItem = (global::Bing.Maps.MapShapeLayer)item;
+            collection.Add(newItem);
+        }
+
+        private void VectorAdd_25_MapShapeCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.MapShape>)instance;
+            var newItem = (global::Bing.Maps.MapShape)item;
+            collection.Add(newItem);
+        }
+
+        private void VectorAdd_41_IObservableVector(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
+            var newItem = (global::System.Object)item;
+            collection.Add(newItem);
+        }
+
+        private void VectorAdd_45_LocationCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Bing.Maps.Location>)instance;
+            var newItem = (global::Bing.Maps.Location)item;
+            collection.Add(newItem);
         }
 
 
@@ -150,6 +251,10 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
 
             switch (typeName)
             {
+            case "Object":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Object));
+                break;
+
             case "Windows.UI.Xaml.Controls.Page":
                 xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Page));
                 break;
@@ -158,12 +263,32 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
                 xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.UserControl));
                 break;
 
-            case "Object":
-                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Object));
-                break;
-
             case "String":
                 xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.String));
+                break;
+
+            case "Windows.UI.Xaml.Controls.Control":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.Control));
+                break;
+
+            case "Windows.UI.Xaml.UIElement":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.UIElement));
+                break;
+
+            case "Double":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Double));
+                break;
+
+            case "Windows.UI.Xaml.DependencyObject":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.DependencyObject));
+                break;
+
+            case "Boolean":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Boolean));
+                break;
+
+            case "Int32":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Int32));
                 break;
 
             case "Windows.UI.Xaml.Media.SolidColorBrush":
@@ -174,9 +299,65 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
                 xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.Single));
                 break;
 
+            case "Windows.UI.Xaml.Media.Brush":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Media.Brush));
+                break;
+
+            case "Windows.UI.Xaml.Controls.ControlTemplate":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ControlTemplate));
+                break;
+
+            case "Windows.UI.Xaml.Controls.ItemsControl":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.ItemsControl));
+                break;
+
+            case "UInt32":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::System.UInt32));
+                break;
+
+            case "Windows.UI.Xaml.Controls.DataTemplateSelector":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector));
+                break;
+
+            case "Windows.UI.Xaml.DataTemplate":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.DataTemplate));
+                break;
+
+            case "Windows.UI.Xaml.Controls.StyleSelector":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Controls.StyleSelector));
+                break;
+
+            case "Windows.UI.Xaml.Style":
+                xamlType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlSystemBaseType(typeName, typeof(global::Windows.UI.Xaml.Style));
+                break;
+
+            case "AR.Drone2.Sample.W8.ViewModel.ViewModelLocator":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::AR.Drone2.Sample.W8.ViewModel.ViewModelLocator), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_0_ViewModelLocator;
+                userType.AddMemberName("Main");
+                xamlType = userType;
+                break;
+
+            case "AR.Drone2.Sample.W8.ViewModel.MainViewModel":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::AR.Drone2.Sample.W8.ViewModel.MainViewModel), GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
+                userType.Activator = Activate_1_MainViewModel;
+                xamlType = userType;
+                break;
+
+            case "GalaSoft.MvvmLight.ViewModelBase":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GalaSoft.MvvmLight.ViewModelBase), GetXamlTypeByName("GalaSoft.MvvmLight.ObservableObject"));
+                xamlType = userType;
+                break;
+
+            case "GalaSoft.MvvmLight.ObservableObject":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::GalaSoft.MvvmLight.ObservableObject), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_3_ObservableObject;
+                xamlType = userType;
+                break;
+
             case "ARDrone2.Sample.Common.LayoutAwarePage":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2.Sample.Common.LayoutAwarePage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_LayoutAwarePage;
+                userType.Activator = Activate_4_LayoutAwarePage;
                 userType.AddMemberName("DefaultViewModel");
                 AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableMap<global::System.String, global::System.Object>),
                                                    "Windows.Foundation.Collections.IObservableMap<String, Object>");
@@ -187,31 +368,372 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Windows.Foundation.Collections.IObservableMap<global::System.String, global::System.Object>), null);
                 AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableMap<global::System.String, global::System.Object>),
                                                    "Windows.Foundation.Collections.IObservableMap<String, Object>");
-                userType.DictionaryAdd = MapAdd_1_IObservableMap;
+                userType.DictionaryAdd = MapAdd_5_IObservableMap;
                 xamlType = userType;
                 break;
 
             case "ARDrone2.Sample.Common.BooleanToVisibilityConverter":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2.Sample.Common.BooleanToVisibilityConverter), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_2_BooleanToVisibilityConverter;
+                userType.Activator = Activate_6_BooleanToVisibilityConverter;
                 xamlType = userType;
                 break;
 
             case "ARDrone2.Sample.ConfigurationPage":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2.Sample.ConfigurationPage), GetXamlTypeByName("ARDrone2.Sample.Common.LayoutAwarePage"));
-                userType.Activator = Activate_3_ConfigurationPage;
+                userType.Activator = Activate_7_ConfigurationPage;
                 xamlType = userType;
                 break;
 
             case "ARDrone2Client.Windows.ViewModel.StringToFloatConverter":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2Client.Windows.ViewModel.StringToFloatConverter), GetXamlTypeByName("Object"));
-                userType.Activator = Activate_4_StringToFloatConverter;
+                userType.Activator = Activate_8_StringToFloatConverter;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Map":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Map), GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_9_Map;
+                userType.SetContentPropertyName("Bing.Maps.Map.Children");
+                userType.AddMemberName("Children");
+                userType.AddMemberName("Credentials");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("ZoomLevel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Heading");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Center");
+                userType.AddMemberName("SearchManager");
+                userType.AddMemberName("TrafficManager");
+                userType.AddMemberName("DirectionsManager");
+                userType.AddMemberName("VenueManager");
+                userType.AddMemberName("LogoPosition");
+                userType.AddMemberName("CopyrightPosition");
+                userType.AddMemberName("ScaleBarPosition");
+                userType.AddMemberName("ShowNavigationBar");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("SuppressNetworkRequests");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("ShowScaleBar");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("TileLayers");
+                userType.AddMemberName("ShapeLayers");
+                userType.AddMemberName("RotationEnabled");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("TrafficIncidentPushpinOptions");
+                userType.AddMemberName("DirectionsUIEventManager");
+                userType.AddMemberName("DirectionsRenderOptions");
+                userType.AddMemberName("IsTransitDirectionsEnable");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("MaxZoomLevel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("MinZoomLevel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Culture");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("HomeRegion");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("TargetBounds");
+                userType.AddMemberName("Bounds");
+                userType.AddMemberName("ShowBreadcrumb");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("ShowBuildings");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("ShowTraffic");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("PreloadArea");
+                userType.AddMemberName("ViewRestriction");
+                userType.AddMemberName("MapType");
+                userType.AddMemberName("TargetHeading");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("TargetZoomLevel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("TargetCenter");
+                userType.AddMemberName("MetersPerPixel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapUIElementCollection":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapUIElementCollection), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_10_MapUIElementCollection;
+                userType.CollectionAdd = VectorAdd_10_MapUIElementCollection;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Location":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Location), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_11_Location;
+                userType.AddMemberName("Longitude");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Latitude");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Search.SearchManager":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Search.SearchManager), GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Traffic.TrafficManager":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Traffic.TrafficManager), GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.DirectionsManager":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.DirectionsManager), GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.VenueMaps.VenueManager":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.VenueManager), GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapForegroundPosition":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapForegroundPosition), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("TopRight", global::Bing.Maps.MapForegroundPosition.TopRight);
+                userType.AddEnumValue("TopLeft", global::Bing.Maps.MapForegroundPosition.TopLeft);
+                userType.AddEnumValue("BottomRight", global::Bing.Maps.MapForegroundPosition.BottomRight);
+                userType.AddEnumValue("BottomLeft", global::Bing.Maps.MapForegroundPosition.BottomLeft);
+                xamlType = userType;
+                break;
+
+            case "System.Enum":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::System.Enum), GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case "System.ValueType":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::System.ValueType), GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapTileLayerCollection":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapTileLayerCollection), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_19_MapTileLayerCollection;
+                userType.CollectionAdd = VectorAdd_19_MapTileLayerCollection;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapTileLayer":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapTileLayer), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_20_MapTileLayer;
+                userType.AddMemberName("Bounds");
+                userType.AddMemberName("FillMissingTiles");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("MaxZoomLevel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("MinZoomLevel");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Visible");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("ZIndex");
+                AddToMapOfTypeToStandardName(typeof(global::System.Int32),
+                                                   "Int32");
+                userType.AddMemberName("TileSource");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Opacity");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.LocationRectCollection":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.LocationRectCollection), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_21_LocationRectCollection;
+                userType.CollectionAdd = VectorAdd_21_LocationRectCollection;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.LocationRect":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.LocationRect), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_22_LocationRect;
+                userType.AddMemberName("West");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Southeast");
+                userType.AddMemberName("South");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Northwest");
+                userType.AddMemberName("North");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("East");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Height");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Width");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("Center");
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapShapeLayerCollection":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShapeLayerCollection), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_23_MapShapeLayerCollection;
+                userType.CollectionAdd = VectorAdd_23_MapShapeLayerCollection;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapShapeLayer":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShapeLayer), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_24_MapShapeLayer;
+                userType.AddMemberName("Visible");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("ZIndex");
+                AddToMapOfTypeToStandardName(typeof(global::System.Int32),
+                                                   "Int32");
+                userType.AddMemberName("Shapes");
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapShapeCollection":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShapeCollection), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_25_MapShapeCollection;
+                userType.CollectionAdd = VectorAdd_25_MapShapeCollection;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapShape":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapShape), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.AddMemberName("Visible");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_27_TrafficIncidentPushpinOptions;
+                userType.AddMemberName("WeatherPushpinTemplate");
+                userType.AddMemberName("AlertPushpinTemplate");
+                userType.AddMemberName("ConstructionPushpinTemplate");
+                userType.AddMemberName("RoadHazardPushpinTemplate");
+                userType.AddMemberName("PlannedEventPushpinTemplate");
+                userType.AddMemberName("OtherNewsPushpinTemplate");
+                userType.AddMemberName("MiscellaneousPushpinTemplate");
+                userType.AddMemberName("MassTransitPushpinTemplate");
+                userType.AddMemberName("DisabledVehiclePushpinTemplate");
+                userType.AddMemberName("CongestionPushpinTemplate");
+                userType.AddMemberName("AccidentPushpinTemplate");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.DirectionsUIEventManager":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.DirectionsUIEventManager), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_28_DirectionsUIEventManager;
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.DirectionsRenderOptions":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.DirectionsRenderOptions), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_29_DirectionsRenderOptions;
+                userType.AddMemberName("WalkingPolylineOptions");
+                userType.AddMemberName("TransitPolylineOptions");
+                userType.AddMemberName("DrivingPolylineOptions");
+                userType.AddMemberName("ActiveRoutePolylineOptions");
+                userType.AddMemberName("StepPushpinOptions");
+                userType.AddMemberName("DisambiguationPushpinOptions");
+                userType.AddMemberName("EndWaypointColorBrush");
+                userType.AddMemberName("MiddleWaypointColorBrush");
+                userType.AddMemberName("StartWaypointColorBrush");
+                userType.AddMemberName("WaypointPushpinOptions");
+                userType.AddMemberName("DisplayStepWarnings");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("DisplayItineraryItemHints");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("DisplayTransitIcons");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("DisplayManeuverIcons");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("DisplayDisclaimer");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("AutoUpdateMapView");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("AutoDisplayDisambiguation");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("AutoSetActiveRoute");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("UseDefaultPushpins");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.PreloadArea":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.PreloadArea), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::Bing.Maps.PreloadArea.None);
+                userType.AddEnumValue("Small", global::Bing.Maps.PreloadArea.Small);
+                userType.AddEnumValue("Medium", global::Bing.Maps.PreloadArea.Medium);
+                userType.AddEnumValue("Large", global::Bing.Maps.PreloadArea.Large);
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapViewRestriction":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapViewRestriction), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::Bing.Maps.MapViewRestriction.None);
+                userType.AddEnumValue("ZoomOutToWholeWorld", global::Bing.Maps.MapViewRestriction.ZoomOutToWholeWorld);
+                userType.AddEnumValue("MapOnly", global::Bing.Maps.MapViewRestriction.MapOnly);
+                userType.AddEnumValue("OneWorldOnly", global::Bing.Maps.MapViewRestriction.OneWorldOnly);
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapType":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapType), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Road", global::Bing.Maps.MapType.Road);
+                userType.AddEnumValue("Aerial", global::Bing.Maps.MapType.Aerial);
+                userType.AddEnumValue("Birdseye", global::Bing.Maps.MapType.Birdseye);
+                userType.AddEnumValue("HighContrast", global::Bing.Maps.MapType.HighContrast);
+                userType.AddEnumValue("Empty", global::Bing.Maps.MapType.Empty);
                 xamlType = userType;
                 break;
 
             case "ARDrone2Client.Windows.Input.JoystickControl":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2Client.Windows.Input.JoystickControl), GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_5_JoystickControl;
+                userType.Activator = Activate_33_JoystickControl;
                 userType.AddMemberName("BorderElipseColor");
                 userType.AddMemberName("StickColor");
                 userType.AddMemberName("X");
@@ -225,13 +747,370 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
 
             case "ARDrone2.Sample.FlyPage":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2.Sample.FlyPage), GetXamlTypeByName("ARDrone2.Sample.Common.LayoutAwarePage"));
-                userType.Activator = Activate_6_FlyPage;
+                userType.Activator = Activate_34_FlyPage;
                 xamlType = userType;
                 break;
 
             case "ARDrone2.Sample.MainPage":
                 userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::ARDrone2.Sample.MainPage), GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_MainPage;
+                userType.Activator = Activate_35_MainPage;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.DirectionsPolylineRenderOptions":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.DirectionsPolylineRenderOptions), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_36_DirectionsPolylineRenderOptions;
+                userType.AddMemberName("Visible");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("LineWidth");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("LineColor");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.DirectionsPushpinRenderOptions":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.DirectionsPushpinRenderOptions), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_37_DirectionsPushpinRenderOptions;
+                userType.AddMemberName("Visible");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("Offset");
+                userType.AddMemberName("PushpinTemplate");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Pushpin":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Pushpin), GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_38_Pushpin;
+                userType.AddMemberName("AssociateObject");
+                AddToMapOfTypeToStandardName(typeof(global::System.Object),
+                                                   "Object");
+                userType.AddMemberName("Selected");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("Text");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapItemsControl":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapItemsControl), GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
+                userType.Activator = Activate_39_MapItemsControl;
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.VenueMaps.VenueFloorDataSource":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.VenueFloorDataSource), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_40_VenueFloorDataSource;
+                userType.AddMemberName("Items");
+                AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>),
+                                                   "Windows.Foundation.Collections.IObservableVector<Object>");
+                userType.AddMemberName("Name");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Windows.Foundation.Collections.IObservableVector<Object>":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>), null);
+                AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>),
+                                                   "Windows.Foundation.Collections.IObservableVector<Object>");
+                userType.CollectionAdd = VectorAdd_41_IObservableVector;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.VenueMaps.VenueEntity":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.VenueEntity), GetXamlTypeByName("Object"));
+                userType.AddMemberName("Highlighted");
+                AddToMapOfTypeToStandardName(typeof(global::System.Boolean),
+                                                   "Boolean");
+                userType.AddMemberName("LineWidth");
+                AddToMapOfTypeToStandardName(typeof(global::System.Double),
+                                                   "Double");
+                userType.AddMemberName("HighlightColor");
+                userType.AddMemberName("FillColor");
+                userType.AddMemberName("LineColor");
+                userType.AddMemberName("Type");
+                userType.AddMemberName("PhoneNumber");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Name");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Outline");
+                userType.AddMemberName("Id");
+                AddToMapOfTypeToStandardName(typeof(global::System.Int32),
+                                                   "Int32");
+                userType.AddMemberName("FloorName");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Floor");
+                userType.AddMemberName("Location");
+                userType.AddMemberName("Description");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("CategoryName");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("CategoryId");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("BusinessId");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Address");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Windows.UI.Color":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Windows.UI.Color), GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.VenueMaps.VenueEntityType":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.VenueEntityType), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Unknown", global::Bing.Maps.VenueMaps.VenueEntityType.Unknown);
+                userType.AddEnumValue("AccessibleEntrance", global::Bing.Maps.VenueMaps.VenueEntityType.AccessibleEntrance);
+                userType.AddEnumValue("AirportGroundTransportation", global::Bing.Maps.VenueMaps.VenueEntityType.AirportGroundTransportation);
+                userType.AddEnumValue("ATM", global::Bing.Maps.VenueMaps.VenueEntityType.ATM);
+                userType.AddEnumValue("BabyChangingFacilities", global::Bing.Maps.VenueMaps.VenueEntityType.BabyChangingFacilities);
+                userType.AddEnumValue("Ballroom", global::Bing.Maps.VenueMaps.VenueEntityType.Ballroom);
+                userType.AddEnumValue("BallroomDivision", global::Bing.Maps.VenueMaps.VenueEntityType.BallroomDivision);
+                userType.AddEnumValue("Concourse", global::Bing.Maps.VenueMaps.VenueEntityType.Concourse);
+                userType.AddEnumValue("Display", global::Bing.Maps.VenueMaps.VenueEntityType.Display);
+                userType.AddEnumValue("ElevatedTrain", global::Bing.Maps.VenueMaps.VenueEntityType.ElevatedTrain);
+                userType.AddEnumValue("Floor", global::Bing.Maps.VenueMaps.VenueEntityType.Floor);
+                userType.AddEnumValue("Footprint", global::Bing.Maps.VenueMaps.VenueEntityType.Footprint);
+                userType.AddEnumValue("Grass", global::Bing.Maps.VenueMaps.VenueEntityType.Grass);
+                userType.AddEnumValue("Object", global::Bing.Maps.VenueMaps.VenueEntityType.Object);
+                userType.AddEnumValue("LondonUndergroundEntrance", global::Bing.Maps.VenueMaps.VenueEntityType.LondonUndergroundEntrance);
+                userType.AddEnumValue("ParkingArea", global::Bing.Maps.VenueMaps.VenueEntityType.ParkingArea);
+                userType.AddEnumValue("PublicArea", global::Bing.Maps.VenueMaps.VenueEntityType.PublicArea);
+                userType.AddEnumValue("Railroad", global::Bing.Maps.VenueMaps.VenueEntityType.Railroad);
+                userType.AddEnumValue("Room", global::Bing.Maps.VenueMaps.VenueEntityType.Room);
+                userType.AddEnumValue("SecureArea", global::Bing.Maps.VenueMaps.VenueEntityType.SecureArea);
+                userType.AddEnumValue("SecurityLine", global::Bing.Maps.VenueMaps.VenueEntityType.SecurityLine);
+                userType.AddEnumValue("Shop", global::Bing.Maps.VenueMaps.VenueEntityType.Shop);
+                userType.AddEnumValue("ShopFood", global::Bing.Maps.VenueMaps.VenueEntityType.ShopFood);
+                userType.AddEnumValue("SpecialArea", global::Bing.Maps.VenueMaps.VenueEntityType.SpecialArea);
+                userType.AddEnumValue("SpecialRoom", global::Bing.Maps.VenueMaps.VenueEntityType.SpecialRoom);
+                userType.AddEnumValue("Subway", global::Bing.Maps.VenueMaps.VenueEntityType.Subway);
+                userType.AddEnumValue("Terminal", global::Bing.Maps.VenueMaps.VenueEntityType.Terminal);
+                userType.AddEnumValue("Text", global::Bing.Maps.VenueMaps.VenueEntityType.Text);
+                userType.AddEnumValue("TicketVendingMachine", global::Bing.Maps.VenueMaps.VenueEntityType.TicketVendingMachine);
+                userType.AddEnumValue("Transportation", global::Bing.Maps.VenueMaps.VenueEntityType.Transportation);
+                userType.AddEnumValue("VenuePatio", global::Bing.Maps.VenueMaps.VenueEntityType.VenuePatio);
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.LocationCollection":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.LocationCollection), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_45_LocationCollection;
+                userType.CollectionAdd = VectorAdd_45_LocationCollection;
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.VenueMaps.Floor":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.Floor), GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.VenueMaps.VenueAddress":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.VenueMaps.VenueAddress), GetXamlTypeByName("Bing.Maps.MapAddress"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.MapAddress":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.MapAddress), GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.PushpinOffset":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.PushpinOffset), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("TopLeft", global::Bing.Maps.PushpinOffset.TopLeft);
+                userType.AddEnumValue("TopCenter", global::Bing.Maps.PushpinOffset.TopCenter);
+                userType.AddEnumValue("TopRight", global::Bing.Maps.PushpinOffset.TopRight);
+                userType.AddEnumValue("CenterLeft", global::Bing.Maps.PushpinOffset.CenterLeft);
+                userType.AddEnumValue("Center", global::Bing.Maps.PushpinOffset.Center);
+                userType.AddEnumValue("CenterRight", global::Bing.Maps.PushpinOffset.CenterRight);
+                userType.AddEnumValue("BottomLeft", global::Bing.Maps.PushpinOffset.BottomLeft);
+                userType.AddEnumValue("BottomCenter", global::Bing.Maps.PushpinOffset.BottomCenter);
+                userType.AddEnumValue("BottomRight", global::Bing.Maps.PushpinOffset.BottomRight);
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.ItineraryItemDataSource":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.ItineraryItemDataSource), GetXamlTypeByName("Object"));
+                userType.AddMemberName("Warnings");
+                AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>),
+                                                   "Windows.Foundation.Collections.IObservableVector<Object>");
+                userType.AddMemberName("IconColor");
+                userType.AddMemberName("AutomationName");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Hint");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Icon");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Index");
+                AddToMapOfTypeToStandardName(typeof(global::System.UInt32),
+                                                   "UInt32");
+                userType.AddMemberName("RouteLegIndex");
+                AddToMapOfTypeToStandardName(typeof(global::System.UInt32),
+                                                   "UInt32");
+                userType.AddMemberName("TransitStop");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("TransitDepartureTime");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("TransitArrivalTime");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("TransitArrivalInstructionHeader");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("TransitArrivalInstruction");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("TransitInstructionHeader");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("DisplayIndex");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Instruction");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Distance");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.RouteLegDataSource":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.RouteLegDataSource), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_51_RouteLegDataSource;
+                userType.AddMemberName("Items");
+                AddToMapOfTypeToStandardName(typeof(global::Windows.Foundation.Collections.IObservableVector<global::System.Object>),
+                                                   "Windows.Foundation.Collections.IObservableVector<Object>");
+                userType.AddMemberName("AutomationName");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Header");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.TransitRouteDataSource":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.TransitRouteDataSource), GetXamlTypeByName("Object"));
+                userType.Activator = Activate_52_TransitRouteDataSource;
+                userType.AddMemberName("AutomationName");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Icon");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.AddMemberName("Summary");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.RouteLegDataTemplateSelector), GetXamlTypeByName("Windows.UI.Xaml.Controls.DataTemplateSelector"));
+                userType.Activator = Activate_53_RouteLegDataTemplateSelector;
+                userType.AddMemberName("RouteLegHeaderItemTemplate");
+                userType.AddMemberName("GroupRouteLegHeaderItemTemplate");
+                userType.AddMemberName("WalkItineraryItemTemplate");
+                userType.AddMemberName("TransitWaypointTemplate");
+                userType.AddMemberName("TransitItineraryItemTemplate");
+                userType.AddMemberName("ItineraryItemTemplate");
+                userType.AddMemberName("WaypointTemplate");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.DirectionsContainerSelector":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.DirectionsContainerSelector), GetXamlTypeByName("Windows.UI.Xaml.Controls.StyleSelector"));
+                userType.Activator = Activate_54_DirectionsContainerSelector;
+                userType.AddMemberName("UnSelectableStyle");
+                userType.AddMemberName("SelectableStyle");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.Warning":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.Warning), GetXamlTypeByName("Object"));
+                userType.AddMemberName("Type");
+                userType.AddMemberName("Severity");
+                userType.AddMemberName("Message");
+                AddToMapOfTypeToStandardName(typeof(global::System.String),
+                                                   "String");
+                userType.SetIsBindable();
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.WarningType":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.WarningType), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::Bing.Maps.Directions.WarningType.None);
+                userType.AddEnumValue("Accident", global::Bing.Maps.Directions.WarningType.Accident);
+                userType.AddEnumValue("AdminDivisionChange", global::Bing.Maps.Directions.WarningType.AdminDivisionChange);
+                userType.AddEnumValue("BlockedRoad", global::Bing.Maps.Directions.WarningType.BlockedRoad);
+                userType.AddEnumValue("CheckTimetable", global::Bing.Maps.Directions.WarningType.CheckTimetable);
+                userType.AddEnumValue("Congestion", global::Bing.Maps.Directions.WarningType.Congestion);
+                userType.AddEnumValue("CountryChange", global::Bing.Maps.Directions.WarningType.CountryChange);
+                userType.AddEnumValue("DisabledVehicle", global::Bing.Maps.Directions.WarningType.DisabledVehicle);
+                userType.AddEnumValue("GateAccess", global::Bing.Maps.Directions.WarningType.GateAccess);
+                userType.AddEnumValue("GetOffTransit", global::Bing.Maps.Directions.WarningType.GetOffTransit);
+                userType.AddEnumValue("GetOnTransit", global::Bing.Maps.Directions.WarningType.GetOnTransit);
+                userType.AddEnumValue("IllegalUTurn", global::Bing.Maps.Directions.WarningType.IllegalUTurn);
+                userType.AddEnumValue("MassTransit", global::Bing.Maps.Directions.WarningType.MassTransit);
+                userType.AddEnumValue("Miscellaneous", global::Bing.Maps.Directions.WarningType.Miscellaneous);
+                userType.AddEnumValue("NoIncident", global::Bing.Maps.Directions.WarningType.NoIncident);
+                userType.AddEnumValue("Other", global::Bing.Maps.Directions.WarningType.Other);
+                userType.AddEnumValue("OtherNews", global::Bing.Maps.Directions.WarningType.OtherNews);
+                userType.AddEnumValue("OtherTrafficIncidents", global::Bing.Maps.Directions.WarningType.OtherTrafficIncidents);
+                userType.AddEnumValue("PlannedEvents", global::Bing.Maps.Directions.WarningType.PlannedEvents);
+                userType.AddEnumValue("PrivateRoad", global::Bing.Maps.Directions.WarningType.PrivateRoad);
+                userType.AddEnumValue("RestrictedTurn", global::Bing.Maps.Directions.WarningType.RestrictedTurn);
+                userType.AddEnumValue("RoadClosures", global::Bing.Maps.Directions.WarningType.RoadClosures);
+                userType.AddEnumValue("RoadHazard", global::Bing.Maps.Directions.WarningType.RoadHazard);
+                userType.AddEnumValue("ScheduledConstruction", global::Bing.Maps.Directions.WarningType.ScheduledConstruction);
+                userType.AddEnumValue("SeasonalClosures", global::Bing.Maps.Directions.WarningType.SeasonalClosures);
+                userType.AddEnumValue("Tollbooth", global::Bing.Maps.Directions.WarningType.Tollbooth);
+                userType.AddEnumValue("WarningTypeTollRoad", global::Bing.Maps.Directions.WarningType.WarningTypeTollRoad);
+                userType.AddEnumValue("TollZoneEnter", global::Bing.Maps.Directions.WarningType.TollZoneEnter);
+                userType.AddEnumValue("TollZoneExit", global::Bing.Maps.Directions.WarningType.TollZoneExit);
+                userType.AddEnumValue("TrafficFlow", global::Bing.Maps.Directions.WarningType.TrafficFlow);
+                userType.AddEnumValue("TransitLineChange", global::Bing.Maps.Directions.WarningType.TransitLineChange);
+                userType.AddEnumValue("UnpavedRoad", global::Bing.Maps.Directions.WarningType.UnpavedRoad);
+                userType.AddEnumValue("Weather", global::Bing.Maps.Directions.WarningType.Weather);
+                xamlType = userType;
+                break;
+
+            case "Bing.Maps.Directions.WarningSeverity":
+                userType = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType(this, typeName, typeof(global::Bing.Maps.Directions.WarningSeverity), GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::Bing.Maps.Directions.WarningSeverity.None);
+                userType.AddEnumValue("LowImpact", global::Bing.Maps.Directions.WarningSeverity.LowImpact);
+                userType.AddEnumValue("Minor", global::Bing.Maps.Directions.WarningSeverity.Minor);
+                userType.AddEnumValue("Moderate", global::Bing.Maps.Directions.WarningSeverity.Moderate);
+                userType.AddEnumValue("Serious", global::Bing.Maps.Directions.WarningSeverity.Serious);
                 xamlType = userType;
                 break;
 
@@ -248,7 +1127,11 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
                 {
                     _otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
+                    provider = new global::Bing.Maps.Bing_Maps_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
                     provider = new global::ARDrone2.Client.W8.ARDrone2_Client_W8_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    _otherProviders.Add(provider); 
+                    provider = new global::Callisto.Callisto_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     _otherProviders.Add(provider); 
                 }
                 return _otherProviders;
@@ -283,45 +1166,1370 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
             return null;
         }
 
-        private object get_0_LayoutAwarePage_DefaultViewModel(object instance)
+        private object get_0_ViewModelLocator_Main(object instance)
+        {
+            var that = (global::AR.Drone2.Sample.W8.ViewModel.ViewModelLocator)instance;
+            return that.Main;
+        }
+        private object get_1_LayoutAwarePage_DefaultViewModel(object instance)
         {
             var that = (global::ARDrone2.Sample.Common.LayoutAwarePage)instance;
             return that.DefaultViewModel;
         }
-        private void set_0_LayoutAwarePage_DefaultViewModel(object instance, object Value)
+        private void set_1_LayoutAwarePage_DefaultViewModel(object instance, object Value)
         {
             var that = (global::ARDrone2.Sample.Common.LayoutAwarePage)instance;
             that.DefaultViewModel = (global::Windows.Foundation.Collections.IObservableMap<global::System.String, global::System.Object>)Value;
         }
-        private object get_1_JoystickControl_BorderElipseColor(object instance)
+        private object get_2_Map_Children(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.Children;
+        }
+        private object get_3_Map_Credentials(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.Credentials;
+        }
+        private void set_3_Map_Credentials(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.Credentials = (global::System.String)Value;
+        }
+        private object get_4_Map_ZoomLevel(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ZoomLevel;
+        }
+        private void set_4_Map_ZoomLevel(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ZoomLevel = (global::System.Double)Value;
+        }
+        private object get_5_Map_Heading(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.Heading;
+        }
+        private void set_5_Map_Heading(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.Heading = (global::System.Double)Value;
+        }
+        private object get_6_Map_Center(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.Center;
+        }
+        private void set_6_Map_Center(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.Center = (global::Bing.Maps.Location)Value;
+        }
+        private object get_7_Map_SearchManager(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.SearchManager;
+        }
+        private object get_8_Map_TrafficManager(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TrafficManager;
+        }
+        private object get_9_Map_DirectionsManager(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.DirectionsManager;
+        }
+        private object get_10_Map_VenueManager(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.VenueManager;
+        }
+        private object get_11_Map_LogoPosition(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.LogoPosition;
+        }
+        private void set_11_Map_LogoPosition(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.LogoPosition = (global::Bing.Maps.MapForegroundPosition)Value;
+        }
+        private object get_12_Map_CopyrightPosition(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.CopyrightPosition;
+        }
+        private void set_12_Map_CopyrightPosition(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.CopyrightPosition = (global::Bing.Maps.MapForegroundPosition)Value;
+        }
+        private object get_13_Map_ScaleBarPosition(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ScaleBarPosition;
+        }
+        private void set_13_Map_ScaleBarPosition(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ScaleBarPosition = (global::Bing.Maps.MapForegroundPosition)Value;
+        }
+        private object get_14_Map_ShowNavigationBar(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowNavigationBar;
+        }
+        private void set_14_Map_ShowNavigationBar(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowNavigationBar = (global::System.Boolean)Value;
+        }
+        private object get_15_Map_SuppressNetworkRequests(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.SuppressNetworkRequests;
+        }
+        private void set_15_Map_SuppressNetworkRequests(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.SuppressNetworkRequests = (global::System.Boolean)Value;
+        }
+        private object get_16_Map_ShowScaleBar(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowScaleBar;
+        }
+        private void set_16_Map_ShowScaleBar(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowScaleBar = (global::System.Boolean)Value;
+        }
+        private object get_17_Map_TileLayers(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TileLayers;
+        }
+        private object get_18_MapTileLayer_Bounds(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.Bounds;
+        }
+        private void set_18_MapTileLayer_Bounds(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.Bounds = (global::Bing.Maps.LocationRectCollection)Value;
+        }
+        private object get_19_LocationRect_West(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.West;
+        }
+        private object get_20_LocationRect_Southeast(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.Southeast;
+        }
+        private object get_21_LocationRect_South(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.South;
+        }
+        private object get_22_LocationRect_Northwest(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.Northwest;
+        }
+        private object get_23_LocationRect_North(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.North;
+        }
+        private object get_24_LocationRect_East(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.East;
+        }
+        private object get_25_LocationRect_Height(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.Height;
+        }
+        private void set_25_LocationRect_Height(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            that.Height = (global::System.Double)Value;
+        }
+        private object get_26_LocationRect_Width(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.Width;
+        }
+        private void set_26_LocationRect_Width(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            that.Width = (global::System.Double)Value;
+        }
+        private object get_27_LocationRect_Center(object instance)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            return that.Center;
+        }
+        private void set_27_LocationRect_Center(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.LocationRect)instance;
+            that.Center = (global::Bing.Maps.Location)Value;
+        }
+        private object get_28_MapTileLayer_FillMissingTiles(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.FillMissingTiles;
+        }
+        private void set_28_MapTileLayer_FillMissingTiles(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.FillMissingTiles = (global::System.Boolean)Value;
+        }
+        private object get_29_MapTileLayer_MaxZoomLevel(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.MaxZoomLevel;
+        }
+        private void set_29_MapTileLayer_MaxZoomLevel(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.MaxZoomLevel = (global::System.Double)Value;
+        }
+        private object get_30_MapTileLayer_MinZoomLevel(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.MinZoomLevel;
+        }
+        private void set_30_MapTileLayer_MinZoomLevel(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.MinZoomLevel = (global::System.Double)Value;
+        }
+        private object get_31_MapTileLayer_Visible(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.Visible;
+        }
+        private void set_31_MapTileLayer_Visible(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.Visible = (global::System.Boolean)Value;
+        }
+        private object get_32_MapTileLayer_ZIndex(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.ZIndex;
+        }
+        private void set_32_MapTileLayer_ZIndex(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.ZIndex = (global::System.Int32)Value;
+        }
+        private object get_33_MapTileLayer_TileSource(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.TileSource;
+        }
+        private void set_33_MapTileLayer_TileSource(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.TileSource = (global::System.String)Value;
+        }
+        private object get_34_MapTileLayer_Opacity(object instance)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            return that.Opacity;
+        }
+        private void set_34_MapTileLayer_Opacity(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapTileLayer)instance;
+            that.Opacity = (global::System.Double)Value;
+        }
+        private object get_35_Map_ShapeLayers(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShapeLayers;
+        }
+        private object get_36_MapShapeLayer_Visible(object instance)
+        {
+            var that = (global::Bing.Maps.MapShapeLayer)instance;
+            return that.Visible;
+        }
+        private void set_36_MapShapeLayer_Visible(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapShapeLayer)instance;
+            that.Visible = (global::System.Boolean)Value;
+        }
+        private object get_37_MapShapeLayer_ZIndex(object instance)
+        {
+            var that = (global::Bing.Maps.MapShapeLayer)instance;
+            return that.ZIndex;
+        }
+        private void set_37_MapShapeLayer_ZIndex(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapShapeLayer)instance;
+            that.ZIndex = (global::System.Int32)Value;
+        }
+        private object get_38_MapShapeLayer_Shapes(object instance)
+        {
+            var that = (global::Bing.Maps.MapShapeLayer)instance;
+            return that.Shapes;
+        }
+        private void set_38_MapShapeLayer_Shapes(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapShapeLayer)instance;
+            that.Shapes = (global::Bing.Maps.MapShapeCollection)Value;
+        }
+        private object get_39_MapShape_Visible(object instance)
+        {
+            var that = (global::Bing.Maps.MapShape)instance;
+            return that.Visible;
+        }
+        private void set_39_MapShape_Visible(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.MapShape)instance;
+            that.Visible = (global::System.Boolean)Value;
+        }
+        private object get_40_Map_RotationEnabled(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.RotationEnabled;
+        }
+        private object get_41_Map_TrafficIncidentPushpinOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TrafficIncidentPushpinOptions;
+        }
+        private void set_41_Map_TrafficIncidentPushpinOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.TrafficIncidentPushpinOptions = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)Value;
+        }
+        private object get_42_Map_DirectionsUIEventManager(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.DirectionsUIEventManager;
+        }
+        private void set_42_Map_DirectionsUIEventManager(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.DirectionsUIEventManager = (global::Bing.Maps.Directions.DirectionsUIEventManager)Value;
+        }
+        private object get_43_Map_DirectionsRenderOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.DirectionsRenderOptions;
+        }
+        private void set_43_Map_DirectionsRenderOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.DirectionsRenderOptions = (global::Bing.Maps.Directions.DirectionsRenderOptions)Value;
+        }
+        private object get_44_Map_IsTransitDirectionsEnable(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.IsTransitDirectionsEnable;
+        }
+        private object get_45_Map_MaxZoomLevel(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.MaxZoomLevel;
+        }
+        private object get_46_Map_MinZoomLevel(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.MinZoomLevel;
+        }
+        private object get_47_Map_Culture(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.Culture;
+        }
+        private void set_47_Map_Culture(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.Culture = (global::System.String)Value;
+        }
+        private object get_48_Map_HomeRegion(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.HomeRegion;
+        }
+        private void set_48_Map_HomeRegion(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.HomeRegion = (global::System.String)Value;
+        }
+        private object get_49_Map_TargetBounds(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TargetBounds;
+        }
+        private object get_50_Map_Bounds(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.Bounds;
+        }
+        private object get_51_Map_ShowBreadcrumb(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowBreadcrumb;
+        }
+        private void set_51_Map_ShowBreadcrumb(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowBreadcrumb = (global::System.Boolean)Value;
+        }
+        private object get_52_Map_ShowBuildings(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowBuildings;
+        }
+        private void set_52_Map_ShowBuildings(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowBuildings = (global::System.Boolean)Value;
+        }
+        private object get_53_Map_ShowTraffic(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ShowTraffic;
+        }
+        private void set_53_Map_ShowTraffic(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ShowTraffic = (global::System.Boolean)Value;
+        }
+        private object get_54_Map_PreloadArea(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.PreloadArea;
+        }
+        private void set_54_Map_PreloadArea(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.PreloadArea = (global::Bing.Maps.PreloadArea)Value;
+        }
+        private object get_55_Map_ViewRestriction(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.ViewRestriction;
+        }
+        private void set_55_Map_ViewRestriction(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.ViewRestriction = (global::Bing.Maps.MapViewRestriction)Value;
+        }
+        private object get_56_Map_MapType(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.MapType;
+        }
+        private void set_56_Map_MapType(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            that.MapType = (global::Bing.Maps.MapType)Value;
+        }
+        private object get_57_Map_TargetHeading(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TargetHeading;
+        }
+        private object get_58_Map_TargetZoomLevel(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TargetZoomLevel;
+        }
+        private object get_59_Map_TargetCenter(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.TargetCenter;
+        }
+        private object get_60_Map_MetersPerPixel(object instance)
+        {
+            var that = (global::Bing.Maps.Map)instance;
+            return that.MetersPerPixel;
+        }
+        private object get_61_JoystickControl_BorderElipseColor(object instance)
         {
             var that = (global::ARDrone2Client.Windows.Input.JoystickControl)instance;
             return that.BorderElipseColor;
         }
-        private void set_1_JoystickControl_BorderElipseColor(object instance, object Value)
+        private void set_61_JoystickControl_BorderElipseColor(object instance, object Value)
         {
             var that = (global::ARDrone2Client.Windows.Input.JoystickControl)instance;
             that.BorderElipseColor = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_2_JoystickControl_StickColor(object instance)
+        private object get_62_JoystickControl_StickColor(object instance)
         {
             var that = (global::ARDrone2Client.Windows.Input.JoystickControl)instance;
             return that.StickColor;
         }
-        private void set_2_JoystickControl_StickColor(object instance, object Value)
+        private void set_62_JoystickControl_StickColor(object instance, object Value)
         {
             var that = (global::ARDrone2Client.Windows.Input.JoystickControl)instance;
             that.StickColor = (global::Windows.UI.Xaml.Media.SolidColorBrush)Value;
         }
-        private object get_3_JoystickControl_X(object instance)
+        private object get_63_JoystickControl_X(object instance)
         {
             var that = (global::ARDrone2Client.Windows.Input.JoystickControl)instance;
             return that.X;
         }
-        private object get_4_JoystickControl_Y(object instance)
+        private object get_64_JoystickControl_Y(object instance)
         {
             var that = (global::ARDrone2Client.Windows.Input.JoystickControl)instance;
             return that.Y;
+        }
+        private object get_65_Location_Longitude(object instance)
+        {
+            var that = (global::Bing.Maps.Location)instance;
+            return that.Longitude;
+        }
+        private void set_65_Location_Longitude(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Location)instance;
+            that.Longitude = (global::System.Double)Value;
+        }
+        private object get_66_Location_Latitude(object instance)
+        {
+            var that = (global::Bing.Maps.Location)instance;
+            return that.Latitude;
+        }
+        private void set_66_Location_Latitude(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Location)instance;
+            that.Latitude = (global::System.Double)Value;
+        }
+        private object get_67_DirectionsRenderOptions_WalkingPolylineOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.WalkingPolylineOptions;
+        }
+        private void set_67_DirectionsRenderOptions_WalkingPolylineOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.WalkingPolylineOptions = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)Value;
+        }
+        private object get_68_DirectionsRenderOptions_TransitPolylineOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.TransitPolylineOptions;
+        }
+        private void set_68_DirectionsRenderOptions_TransitPolylineOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.TransitPolylineOptions = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)Value;
+        }
+        private object get_69_DirectionsRenderOptions_DrivingPolylineOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DrivingPolylineOptions;
+        }
+        private void set_69_DirectionsRenderOptions_DrivingPolylineOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DrivingPolylineOptions = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)Value;
+        }
+        private object get_70_DirectionsRenderOptions_ActiveRoutePolylineOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.ActiveRoutePolylineOptions;
+        }
+        private void set_70_DirectionsRenderOptions_ActiveRoutePolylineOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.ActiveRoutePolylineOptions = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)Value;
+        }
+        private object get_71_DirectionsRenderOptions_StepPushpinOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.StepPushpinOptions;
+        }
+        private void set_71_DirectionsRenderOptions_StepPushpinOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.StepPushpinOptions = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)Value;
+        }
+        private object get_72_DirectionsRenderOptions_DisambiguationPushpinOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DisambiguationPushpinOptions;
+        }
+        private void set_72_DirectionsRenderOptions_DisambiguationPushpinOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DisambiguationPushpinOptions = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)Value;
+        }
+        private object get_73_DirectionsRenderOptions_EndWaypointColorBrush(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.EndWaypointColorBrush;
+        }
+        private void set_73_DirectionsRenderOptions_EndWaypointColorBrush(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.EndWaypointColorBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_74_DirectionsRenderOptions_MiddleWaypointColorBrush(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.MiddleWaypointColorBrush;
+        }
+        private void set_74_DirectionsRenderOptions_MiddleWaypointColorBrush(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.MiddleWaypointColorBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_75_DirectionsRenderOptions_StartWaypointColorBrush(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.StartWaypointColorBrush;
+        }
+        private void set_75_DirectionsRenderOptions_StartWaypointColorBrush(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.StartWaypointColorBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_76_DirectionsRenderOptions_WaypointPushpinOptions(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.WaypointPushpinOptions;
+        }
+        private void set_76_DirectionsRenderOptions_WaypointPushpinOptions(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.WaypointPushpinOptions = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)Value;
+        }
+        private object get_77_DirectionsRenderOptions_DisplayStepWarnings(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DisplayStepWarnings;
+        }
+        private void set_77_DirectionsRenderOptions_DisplayStepWarnings(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DisplayStepWarnings = (global::System.Boolean)Value;
+        }
+        private object get_78_DirectionsRenderOptions_DisplayItineraryItemHints(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DisplayItineraryItemHints;
+        }
+        private void set_78_DirectionsRenderOptions_DisplayItineraryItemHints(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DisplayItineraryItemHints = (global::System.Boolean)Value;
+        }
+        private object get_79_DirectionsRenderOptions_DisplayTransitIcons(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DisplayTransitIcons;
+        }
+        private void set_79_DirectionsRenderOptions_DisplayTransitIcons(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DisplayTransitIcons = (global::System.Boolean)Value;
+        }
+        private object get_80_DirectionsRenderOptions_DisplayManeuverIcons(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DisplayManeuverIcons;
+        }
+        private void set_80_DirectionsRenderOptions_DisplayManeuverIcons(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DisplayManeuverIcons = (global::System.Boolean)Value;
+        }
+        private object get_81_DirectionsRenderOptions_DisplayDisclaimer(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.DisplayDisclaimer;
+        }
+        private void set_81_DirectionsRenderOptions_DisplayDisclaimer(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.DisplayDisclaimer = (global::System.Boolean)Value;
+        }
+        private object get_82_DirectionsRenderOptions_AutoUpdateMapView(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.AutoUpdateMapView;
+        }
+        private void set_82_DirectionsRenderOptions_AutoUpdateMapView(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.AutoUpdateMapView = (global::System.Boolean)Value;
+        }
+        private object get_83_DirectionsRenderOptions_AutoDisplayDisambiguation(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.AutoDisplayDisambiguation;
+        }
+        private void set_83_DirectionsRenderOptions_AutoDisplayDisambiguation(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.AutoDisplayDisambiguation = (global::System.Boolean)Value;
+        }
+        private object get_84_DirectionsRenderOptions_AutoSetActiveRoute(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.AutoSetActiveRoute;
+        }
+        private void set_84_DirectionsRenderOptions_AutoSetActiveRoute(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.AutoSetActiveRoute = (global::System.Boolean)Value;
+        }
+        private object get_85_DirectionsRenderOptions_UseDefaultPushpins(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            return that.UseDefaultPushpins;
+        }
+        private void set_85_DirectionsRenderOptions_UseDefaultPushpins(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsRenderOptions)instance;
+            that.UseDefaultPushpins = (global::System.Boolean)Value;
+        }
+        private object get_86_TrafficIncidentPushpinOptions_WeatherPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.WeatherPushpinTemplate;
+        }
+        private void set_86_TrafficIncidentPushpinOptions_WeatherPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.WeatherPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_87_TrafficIncidentPushpinOptions_AlertPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.AlertPushpinTemplate;
+        }
+        private void set_87_TrafficIncidentPushpinOptions_AlertPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.AlertPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_88_TrafficIncidentPushpinOptions_ConstructionPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.ConstructionPushpinTemplate;
+        }
+        private void set_88_TrafficIncidentPushpinOptions_ConstructionPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.ConstructionPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_89_TrafficIncidentPushpinOptions_RoadHazardPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.RoadHazardPushpinTemplate;
+        }
+        private void set_89_TrafficIncidentPushpinOptions_RoadHazardPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.RoadHazardPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_90_TrafficIncidentPushpinOptions_PlannedEventPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.PlannedEventPushpinTemplate;
+        }
+        private void set_90_TrafficIncidentPushpinOptions_PlannedEventPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.PlannedEventPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_91_TrafficIncidentPushpinOptions_OtherNewsPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.OtherNewsPushpinTemplate;
+        }
+        private void set_91_TrafficIncidentPushpinOptions_OtherNewsPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.OtherNewsPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_92_TrafficIncidentPushpinOptions_MiscellaneousPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.MiscellaneousPushpinTemplate;
+        }
+        private void set_92_TrafficIncidentPushpinOptions_MiscellaneousPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.MiscellaneousPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_93_TrafficIncidentPushpinOptions_MassTransitPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.MassTransitPushpinTemplate;
+        }
+        private void set_93_TrafficIncidentPushpinOptions_MassTransitPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.MassTransitPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_94_TrafficIncidentPushpinOptions_DisabledVehiclePushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.DisabledVehiclePushpinTemplate;
+        }
+        private void set_94_TrafficIncidentPushpinOptions_DisabledVehiclePushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.DisabledVehiclePushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_95_TrafficIncidentPushpinOptions_CongestionPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.CongestionPushpinTemplate;
+        }
+        private void set_95_TrafficIncidentPushpinOptions_CongestionPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.CongestionPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_96_TrafficIncidentPushpinOptions_AccidentPushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            return that.AccidentPushpinTemplate;
+        }
+        private void set_96_TrafficIncidentPushpinOptions_AccidentPushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Traffic.TrafficIncidentPushpinOptions)instance;
+            that.AccidentPushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_97_Pushpin_AssociateObject(object instance)
+        {
+            var that = (global::Bing.Maps.Pushpin)instance;
+            return that.AssociateObject;
+        }
+        private object get_98_Pushpin_Selected(object instance)
+        {
+            var that = (global::Bing.Maps.Pushpin)instance;
+            return that.Selected;
+        }
+        private void set_98_Pushpin_Selected(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Pushpin)instance;
+            that.Selected = (global::System.Boolean)Value;
+        }
+        private object get_99_Pushpin_Text(object instance)
+        {
+            var that = (global::Bing.Maps.Pushpin)instance;
+            return that.Text;
+        }
+        private void set_99_Pushpin_Text(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Pushpin)instance;
+            that.Text = (global::System.String)Value;
+        }
+        private object get_100_VenueFloorDataSource_Items(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueFloorDataSource)instance;
+            return that.Items;
+        }
+        private object get_101_VenueFloorDataSource_Name(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueFloorDataSource)instance;
+            return that.Name;
+        }
+        private void set_101_VenueFloorDataSource_Name(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueFloorDataSource)instance;
+            that.Name = (global::System.String)Value;
+        }
+        private object get_102_VenueEntity_Highlighted(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Highlighted;
+        }
+        private object get_103_VenueEntity_LineWidth(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.LineWidth;
+        }
+        private void set_103_VenueEntity_LineWidth(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            that.LineWidth = (global::System.Double)Value;
+        }
+        private object get_104_VenueEntity_HighlightColor(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.HighlightColor;
+        }
+        private void set_104_VenueEntity_HighlightColor(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            that.HighlightColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_105_VenueEntity_FillColor(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.FillColor;
+        }
+        private void set_105_VenueEntity_FillColor(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            that.FillColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_106_VenueEntity_LineColor(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.LineColor;
+        }
+        private void set_106_VenueEntity_LineColor(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            that.LineColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_107_VenueEntity_Type(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Type;
+        }
+        private object get_108_VenueEntity_PhoneNumber(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.PhoneNumber;
+        }
+        private object get_109_VenueEntity_Name(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Name;
+        }
+        private object get_110_VenueEntity_Outline(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Outline;
+        }
+        private object get_111_VenueEntity_Id(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Id;
+        }
+        private object get_112_VenueEntity_FloorName(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.FloorName;
+        }
+        private object get_113_VenueEntity_Floor(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Floor;
+        }
+        private object get_114_VenueEntity_Location(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Location;
+        }
+        private object get_115_VenueEntity_Description(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Description;
+        }
+        private object get_116_VenueEntity_CategoryName(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.CategoryName;
+        }
+        private object get_117_VenueEntity_CategoryId(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.CategoryId;
+        }
+        private object get_118_VenueEntity_BusinessId(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.BusinessId;
+        }
+        private object get_119_VenueEntity_Address(object instance)
+        {
+            var that = (global::Bing.Maps.VenueMaps.VenueEntity)instance;
+            return that.Address;
+        }
+        private object get_120_DirectionsPushpinRenderOptions_Visible(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)instance;
+            return that.Visible;
+        }
+        private void set_120_DirectionsPushpinRenderOptions_Visible(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)instance;
+            that.Visible = (global::System.Boolean)Value;
+        }
+        private object get_121_DirectionsPushpinRenderOptions_Offset(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)instance;
+            return that.Offset;
+        }
+        private void set_121_DirectionsPushpinRenderOptions_Offset(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)instance;
+            that.Offset = (global::Bing.Maps.PushpinOffset)Value;
+        }
+        private object get_122_DirectionsPushpinRenderOptions_PushpinTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)instance;
+            return that.PushpinTemplate;
+        }
+        private void set_122_DirectionsPushpinRenderOptions_PushpinTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPushpinRenderOptions)instance;
+            that.PushpinTemplate = (global::Windows.UI.Xaml.Controls.ControlTemplate)Value;
+        }
+        private object get_123_DirectionsPolylineRenderOptions_Visible(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)instance;
+            return that.Visible;
+        }
+        private void set_123_DirectionsPolylineRenderOptions_Visible(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)instance;
+            that.Visible = (global::System.Boolean)Value;
+        }
+        private object get_124_DirectionsPolylineRenderOptions_LineWidth(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)instance;
+            return that.LineWidth;
+        }
+        private void set_124_DirectionsPolylineRenderOptions_LineWidth(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)instance;
+            that.LineWidth = (global::System.Double)Value;
+        }
+        private object get_125_DirectionsPolylineRenderOptions_LineColor(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)instance;
+            return that.LineColor;
+        }
+        private void set_125_DirectionsPolylineRenderOptions_LineColor(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsPolylineRenderOptions)instance;
+            that.LineColor = (global::Windows.UI.Color)Value;
+        }
+        private object get_126_ItineraryItemDataSource_Warnings(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.Warnings;
+        }
+        private object get_127_ItineraryItemDataSource_IconColor(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.IconColor;
+        }
+        private void set_127_ItineraryItemDataSource_IconColor(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.IconColor = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_128_ItineraryItemDataSource_AutomationName(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.AutomationName;
+        }
+        private void set_128_ItineraryItemDataSource_AutomationName(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.AutomationName = (global::System.String)Value;
+        }
+        private object get_129_ItineraryItemDataSource_Hint(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.Hint;
+        }
+        private void set_129_ItineraryItemDataSource_Hint(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.Hint = (global::System.String)Value;
+        }
+        private object get_130_ItineraryItemDataSource_Icon(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.Icon;
+        }
+        private void set_130_ItineraryItemDataSource_Icon(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.Icon = (global::System.String)Value;
+        }
+        private object get_131_ItineraryItemDataSource_Index(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.Index;
+        }
+        private void set_131_ItineraryItemDataSource_Index(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.Index = (global::System.UInt32)Value;
+        }
+        private object get_132_ItineraryItemDataSource_RouteLegIndex(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.RouteLegIndex;
+        }
+        private void set_132_ItineraryItemDataSource_RouteLegIndex(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.RouteLegIndex = (global::System.UInt32)Value;
+        }
+        private object get_133_ItineraryItemDataSource_TransitStop(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.TransitStop;
+        }
+        private void set_133_ItineraryItemDataSource_TransitStop(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.TransitStop = (global::System.String)Value;
+        }
+        private object get_134_ItineraryItemDataSource_TransitDepartureTime(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.TransitDepartureTime;
+        }
+        private void set_134_ItineraryItemDataSource_TransitDepartureTime(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.TransitDepartureTime = (global::System.String)Value;
+        }
+        private object get_135_ItineraryItemDataSource_TransitArrivalTime(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.TransitArrivalTime;
+        }
+        private void set_135_ItineraryItemDataSource_TransitArrivalTime(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.TransitArrivalTime = (global::System.String)Value;
+        }
+        private object get_136_ItineraryItemDataSource_TransitArrivalInstructionHeader(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.TransitArrivalInstructionHeader;
+        }
+        private void set_136_ItineraryItemDataSource_TransitArrivalInstructionHeader(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.TransitArrivalInstructionHeader = (global::System.String)Value;
+        }
+        private object get_137_ItineraryItemDataSource_TransitArrivalInstruction(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.TransitArrivalInstruction;
+        }
+        private void set_137_ItineraryItemDataSource_TransitArrivalInstruction(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.TransitArrivalInstruction = (global::System.String)Value;
+        }
+        private object get_138_ItineraryItemDataSource_TransitInstructionHeader(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.TransitInstructionHeader;
+        }
+        private void set_138_ItineraryItemDataSource_TransitInstructionHeader(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.TransitInstructionHeader = (global::System.String)Value;
+        }
+        private object get_139_ItineraryItemDataSource_DisplayIndex(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.DisplayIndex;
+        }
+        private void set_139_ItineraryItemDataSource_DisplayIndex(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.DisplayIndex = (global::System.String)Value;
+        }
+        private object get_140_ItineraryItemDataSource_Instruction(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.Instruction;
+        }
+        private void set_140_ItineraryItemDataSource_Instruction(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.Instruction = (global::System.String)Value;
+        }
+        private object get_141_ItineraryItemDataSource_Distance(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            return that.Distance;
+        }
+        private void set_141_ItineraryItemDataSource_Distance(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.ItineraryItemDataSource)instance;
+            that.Distance = (global::System.String)Value;
+        }
+        private object get_142_RouteLegDataSource_Items(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataSource)instance;
+            return that.Items;
+        }
+        private object get_143_RouteLegDataSource_AutomationName(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataSource)instance;
+            return that.AutomationName;
+        }
+        private void set_143_RouteLegDataSource_AutomationName(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataSource)instance;
+            that.AutomationName = (global::System.String)Value;
+        }
+        private object get_144_RouteLegDataSource_Header(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataSource)instance;
+            return that.Header;
+        }
+        private void set_144_RouteLegDataSource_Header(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataSource)instance;
+            that.Header = (global::System.String)Value;
+        }
+        private object get_145_TransitRouteDataSource_AutomationName(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.TransitRouteDataSource)instance;
+            return that.AutomationName;
+        }
+        private void set_145_TransitRouteDataSource_AutomationName(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.TransitRouteDataSource)instance;
+            that.AutomationName = (global::System.String)Value;
+        }
+        private object get_146_TransitRouteDataSource_Icon(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.TransitRouteDataSource)instance;
+            return that.Icon;
+        }
+        private void set_146_TransitRouteDataSource_Icon(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.TransitRouteDataSource)instance;
+            that.Icon = (global::System.String)Value;
+        }
+        private object get_147_TransitRouteDataSource_Summary(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.TransitRouteDataSource)instance;
+            return that.Summary;
+        }
+        private void set_147_TransitRouteDataSource_Summary(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.TransitRouteDataSource)instance;
+            that.Summary = (global::System.String)Value;
+        }
+        private object get_148_RouteLegDataTemplateSelector_RouteLegHeaderItemTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.RouteLegHeaderItemTemplate;
+        }
+        private void set_148_RouteLegDataTemplateSelector_RouteLegHeaderItemTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.RouteLegHeaderItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_149_RouteLegDataTemplateSelector_GroupRouteLegHeaderItemTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.GroupRouteLegHeaderItemTemplate;
+        }
+        private void set_149_RouteLegDataTemplateSelector_GroupRouteLegHeaderItemTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.GroupRouteLegHeaderItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_150_RouteLegDataTemplateSelector_WalkItineraryItemTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.WalkItineraryItemTemplate;
+        }
+        private void set_150_RouteLegDataTemplateSelector_WalkItineraryItemTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.WalkItineraryItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_151_RouteLegDataTemplateSelector_TransitWaypointTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.TransitWaypointTemplate;
+        }
+        private void set_151_RouteLegDataTemplateSelector_TransitWaypointTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.TransitWaypointTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_152_RouteLegDataTemplateSelector_TransitItineraryItemTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.TransitItineraryItemTemplate;
+        }
+        private void set_152_RouteLegDataTemplateSelector_TransitItineraryItemTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.TransitItineraryItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_153_RouteLegDataTemplateSelector_ItineraryItemTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.ItineraryItemTemplate;
+        }
+        private void set_153_RouteLegDataTemplateSelector_ItineraryItemTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.ItineraryItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_154_RouteLegDataTemplateSelector_WaypointTemplate(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            return that.WaypointTemplate;
+        }
+        private void set_154_RouteLegDataTemplateSelector_WaypointTemplate(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.RouteLegDataTemplateSelector)instance;
+            that.WaypointTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_155_DirectionsContainerSelector_UnSelectableStyle(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsContainerSelector)instance;
+            return that.UnSelectableStyle;
+        }
+        private void set_155_DirectionsContainerSelector_UnSelectableStyle(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsContainerSelector)instance;
+            that.UnSelectableStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_156_DirectionsContainerSelector_SelectableStyle(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsContainerSelector)instance;
+            return that.SelectableStyle;
+        }
+        private void set_156_DirectionsContainerSelector_SelectableStyle(object instance, object Value)
+        {
+            var that = (global::Bing.Maps.Directions.DirectionsContainerSelector)instance;
+            that.SelectableStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_157_Warning_Type(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.Warning)instance;
+            return that.Type;
+        }
+        private object get_158_Warning_Severity(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.Warning)instance;
+            return that.Severity;
+        }
+        private object get_159_Warning_Message(object instance)
+        {
+            var that = (global::Bing.Maps.Directions.Warning)instance;
+            return that.Message;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -331,37 +2539,967 @@ namespace AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "AR.Drone2.Sample.W8.ViewModel.ViewModelLocator.Main":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AR.Drone2.Sample.W8.ViewModel.ViewModelLocator");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Main", "AR.Drone2.Sample.W8.ViewModel.MainViewModel");
+                xamlMember.Getter = get_0_ViewModelLocator_Main;
+                xamlMember.SetIsReadOnly();
+                break;
             case "ARDrone2.Sample.Common.LayoutAwarePage.DefaultViewModel":
                 userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ARDrone2.Sample.Common.LayoutAwarePage");
                 xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Windows.Foundation.Collections.IObservableMap<String, Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_LayoutAwarePage_DefaultViewModel;
-                xamlMember.Setter = set_0_LayoutAwarePage_DefaultViewModel;
+                xamlMember.Getter = get_1_LayoutAwarePage_DefaultViewModel;
+                xamlMember.Setter = set_1_LayoutAwarePage_DefaultViewModel;
+                break;
+            case "Bing.Maps.Map.Children":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Children", "Bing.Maps.MapUIElementCollection");
+                xamlMember.Getter = get_2_Map_Children;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.Credentials":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Credentials", "String");
+                xamlMember.Getter = get_3_Map_Credentials;
+                xamlMember.Setter = set_3_Map_Credentials;
+                break;
+            case "Bing.Maps.Map.ZoomLevel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ZoomLevel", "Double");
+                xamlMember.Getter = get_4_Map_ZoomLevel;
+                xamlMember.Setter = set_4_Map_ZoomLevel;
+                break;
+            case "Bing.Maps.Map.Heading":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Heading", "Double");
+                xamlMember.Getter = get_5_Map_Heading;
+                xamlMember.Setter = set_5_Map_Heading;
+                break;
+            case "Bing.Maps.Map.Center":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Center", "Bing.Maps.Location");
+                xamlMember.Getter = get_6_Map_Center;
+                xamlMember.Setter = set_6_Map_Center;
+                break;
+            case "Bing.Maps.Map.SearchManager":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "SearchManager", "Bing.Maps.Search.SearchManager");
+                xamlMember.Getter = get_7_Map_SearchManager;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.TrafficManager":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TrafficManager", "Bing.Maps.Traffic.TrafficManager");
+                xamlMember.Getter = get_8_Map_TrafficManager;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.DirectionsManager":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DirectionsManager", "Bing.Maps.Directions.DirectionsManager");
+                xamlMember.Getter = get_9_Map_DirectionsManager;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.VenueManager":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "VenueManager", "Bing.Maps.VenueMaps.VenueManager");
+                xamlMember.Getter = get_10_Map_VenueManager;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.LogoPosition":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "LogoPosition", "Bing.Maps.MapForegroundPosition");
+                xamlMember.Getter = get_11_Map_LogoPosition;
+                xamlMember.Setter = set_11_Map_LogoPosition;
+                break;
+            case "Bing.Maps.Map.CopyrightPosition":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "CopyrightPosition", "Bing.Maps.MapForegroundPosition");
+                xamlMember.Getter = get_12_Map_CopyrightPosition;
+                xamlMember.Setter = set_12_Map_CopyrightPosition;
+                break;
+            case "Bing.Maps.Map.ScaleBarPosition":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ScaleBarPosition", "Bing.Maps.MapForegroundPosition");
+                xamlMember.Getter = get_13_Map_ScaleBarPosition;
+                xamlMember.Setter = set_13_Map_ScaleBarPosition;
+                break;
+            case "Bing.Maps.Map.ShowNavigationBar":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ShowNavigationBar", "Boolean");
+                xamlMember.Getter = get_14_Map_ShowNavigationBar;
+                xamlMember.Setter = set_14_Map_ShowNavigationBar;
+                break;
+            case "Bing.Maps.Map.SuppressNetworkRequests":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "SuppressNetworkRequests", "Boolean");
+                xamlMember.Getter = get_15_Map_SuppressNetworkRequests;
+                xamlMember.Setter = set_15_Map_SuppressNetworkRequests;
+                break;
+            case "Bing.Maps.Map.ShowScaleBar":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ShowScaleBar", "Boolean");
+                xamlMember.Getter = get_16_Map_ShowScaleBar;
+                xamlMember.Setter = set_16_Map_ShowScaleBar;
+                break;
+            case "Bing.Maps.Map.TileLayers":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TileLayers", "Bing.Maps.MapTileLayerCollection");
+                xamlMember.Getter = get_17_Map_TileLayers;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.MapTileLayer.Bounds":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Bounds", "Bing.Maps.LocationRectCollection");
+                xamlMember.Getter = get_18_MapTileLayer_Bounds;
+                xamlMember.Setter = set_18_MapTileLayer_Bounds;
+                break;
+            case "Bing.Maps.LocationRect.West":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "West", "Double");
+                xamlMember.Getter = get_19_LocationRect_West;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.LocationRect.Southeast":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Southeast", "Bing.Maps.Location");
+                xamlMember.Getter = get_20_LocationRect_Southeast;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.LocationRect.South":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "South", "Double");
+                xamlMember.Getter = get_21_LocationRect_South;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.LocationRect.Northwest":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Northwest", "Bing.Maps.Location");
+                xamlMember.Getter = get_22_LocationRect_Northwest;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.LocationRect.North":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "North", "Double");
+                xamlMember.Getter = get_23_LocationRect_North;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.LocationRect.East":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "East", "Double");
+                xamlMember.Getter = get_24_LocationRect_East;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.LocationRect.Height":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Height", "Double");
+                xamlMember.Getter = get_25_LocationRect_Height;
+                xamlMember.Setter = set_25_LocationRect_Height;
+                break;
+            case "Bing.Maps.LocationRect.Width":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Width", "Double");
+                xamlMember.Getter = get_26_LocationRect_Width;
+                xamlMember.Setter = set_26_LocationRect_Width;
+                break;
+            case "Bing.Maps.LocationRect.Center":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.LocationRect");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Center", "Bing.Maps.Location");
+                xamlMember.Getter = get_27_LocationRect_Center;
+                xamlMember.Setter = set_27_LocationRect_Center;
+                break;
+            case "Bing.Maps.MapTileLayer.FillMissingTiles":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "FillMissingTiles", "Boolean");
+                xamlMember.Getter = get_28_MapTileLayer_FillMissingTiles;
+                xamlMember.Setter = set_28_MapTileLayer_FillMissingTiles;
+                break;
+            case "Bing.Maps.MapTileLayer.MaxZoomLevel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MaxZoomLevel", "Double");
+                xamlMember.Getter = get_29_MapTileLayer_MaxZoomLevel;
+                xamlMember.Setter = set_29_MapTileLayer_MaxZoomLevel;
+                break;
+            case "Bing.Maps.MapTileLayer.MinZoomLevel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MinZoomLevel", "Double");
+                xamlMember.Getter = get_30_MapTileLayer_MinZoomLevel;
+                xamlMember.Setter = set_30_MapTileLayer_MinZoomLevel;
+                break;
+            case "Bing.Maps.MapTileLayer.Visible":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Visible", "Boolean");
+                xamlMember.Getter = get_31_MapTileLayer_Visible;
+                xamlMember.Setter = set_31_MapTileLayer_Visible;
+                break;
+            case "Bing.Maps.MapTileLayer.ZIndex":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ZIndex", "Int32");
+                xamlMember.Getter = get_32_MapTileLayer_ZIndex;
+                xamlMember.Setter = set_32_MapTileLayer_ZIndex;
+                break;
+            case "Bing.Maps.MapTileLayer.TileSource":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TileSource", "String");
+                xamlMember.Getter = get_33_MapTileLayer_TileSource;
+                xamlMember.Setter = set_33_MapTileLayer_TileSource;
+                break;
+            case "Bing.Maps.MapTileLayer.Opacity":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapTileLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Opacity", "Double");
+                xamlMember.Getter = get_34_MapTileLayer_Opacity;
+                xamlMember.Setter = set_34_MapTileLayer_Opacity;
+                break;
+            case "Bing.Maps.Map.ShapeLayers":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ShapeLayers", "Bing.Maps.MapShapeLayerCollection");
+                xamlMember.Getter = get_35_Map_ShapeLayers;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.MapShapeLayer.Visible":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapShapeLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Visible", "Boolean");
+                xamlMember.Getter = get_36_MapShapeLayer_Visible;
+                xamlMember.Setter = set_36_MapShapeLayer_Visible;
+                break;
+            case "Bing.Maps.MapShapeLayer.ZIndex":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapShapeLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ZIndex", "Int32");
+                xamlMember.Getter = get_37_MapShapeLayer_ZIndex;
+                xamlMember.Setter = set_37_MapShapeLayer_ZIndex;
+                break;
+            case "Bing.Maps.MapShapeLayer.Shapes":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapShapeLayer");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Shapes", "Bing.Maps.MapShapeCollection");
+                xamlMember.Getter = get_38_MapShapeLayer_Shapes;
+                xamlMember.Setter = set_38_MapShapeLayer_Shapes;
+                break;
+            case "Bing.Maps.MapShape.Visible":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.MapShape");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Visible", "Boolean");
+                xamlMember.Getter = get_39_MapShape_Visible;
+                xamlMember.Setter = set_39_MapShape_Visible;
+                break;
+            case "Bing.Maps.Map.RotationEnabled":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "RotationEnabled", "Boolean");
+                xamlMember.Getter = get_40_Map_RotationEnabled;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.TrafficIncidentPushpinOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TrafficIncidentPushpinOptions", "Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember.Getter = get_41_Map_TrafficIncidentPushpinOptions;
+                xamlMember.Setter = set_41_Map_TrafficIncidentPushpinOptions;
+                break;
+            case "Bing.Maps.Map.DirectionsUIEventManager":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DirectionsUIEventManager", "Bing.Maps.Directions.DirectionsUIEventManager");
+                xamlMember.Getter = get_42_Map_DirectionsUIEventManager;
+                xamlMember.Setter = set_42_Map_DirectionsUIEventManager;
+                break;
+            case "Bing.Maps.Map.DirectionsRenderOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DirectionsRenderOptions", "Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember.Getter = get_43_Map_DirectionsRenderOptions;
+                xamlMember.Setter = set_43_Map_DirectionsRenderOptions;
+                break;
+            case "Bing.Maps.Map.IsTransitDirectionsEnable":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "IsTransitDirectionsEnable", "Boolean");
+                xamlMember.Getter = get_44_Map_IsTransitDirectionsEnable;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.MaxZoomLevel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MaxZoomLevel", "Double");
+                xamlMember.Getter = get_45_Map_MaxZoomLevel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.MinZoomLevel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MinZoomLevel", "Double");
+                xamlMember.Getter = get_46_Map_MinZoomLevel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.Culture":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Culture", "String");
+                xamlMember.Getter = get_47_Map_Culture;
+                xamlMember.Setter = set_47_Map_Culture;
+                break;
+            case "Bing.Maps.Map.HomeRegion":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "HomeRegion", "String");
+                xamlMember.Getter = get_48_Map_HomeRegion;
+                xamlMember.Setter = set_48_Map_HomeRegion;
+                break;
+            case "Bing.Maps.Map.TargetBounds":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TargetBounds", "Bing.Maps.LocationRect");
+                xamlMember.Getter = get_49_Map_TargetBounds;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.Bounds":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Bounds", "Bing.Maps.LocationRect");
+                xamlMember.Getter = get_50_Map_Bounds;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.ShowBreadcrumb":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ShowBreadcrumb", "Boolean");
+                xamlMember.Getter = get_51_Map_ShowBreadcrumb;
+                xamlMember.Setter = set_51_Map_ShowBreadcrumb;
+                break;
+            case "Bing.Maps.Map.ShowBuildings":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ShowBuildings", "Boolean");
+                xamlMember.Getter = get_52_Map_ShowBuildings;
+                xamlMember.Setter = set_52_Map_ShowBuildings;
+                break;
+            case "Bing.Maps.Map.ShowTraffic":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ShowTraffic", "Boolean");
+                xamlMember.Getter = get_53_Map_ShowTraffic;
+                xamlMember.Setter = set_53_Map_ShowTraffic;
+                break;
+            case "Bing.Maps.Map.PreloadArea":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "PreloadArea", "Bing.Maps.PreloadArea");
+                xamlMember.Getter = get_54_Map_PreloadArea;
+                xamlMember.Setter = set_54_Map_PreloadArea;
+                break;
+            case "Bing.Maps.Map.ViewRestriction":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ViewRestriction", "Bing.Maps.MapViewRestriction");
+                xamlMember.Getter = get_55_Map_ViewRestriction;
+                xamlMember.Setter = set_55_Map_ViewRestriction;
+                break;
+            case "Bing.Maps.Map.MapType":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MapType", "Bing.Maps.MapType");
+                xamlMember.Getter = get_56_Map_MapType;
+                xamlMember.Setter = set_56_Map_MapType;
+                break;
+            case "Bing.Maps.Map.TargetHeading":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TargetHeading", "Double");
+                xamlMember.Getter = get_57_Map_TargetHeading;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.TargetZoomLevel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TargetZoomLevel", "Double");
+                xamlMember.Getter = get_58_Map_TargetZoomLevel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.TargetCenter":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TargetCenter", "Bing.Maps.Location");
+                xamlMember.Getter = get_59_Map_TargetCenter;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Map.MetersPerPixel":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Map");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MetersPerPixel", "Double");
+                xamlMember.Getter = get_60_Map_MetersPerPixel;
+                xamlMember.SetIsReadOnly();
                 break;
             case "ARDrone2Client.Windows.Input.JoystickControl.BorderElipseColor":
                 userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ARDrone2Client.Windows.Input.JoystickControl");
                 xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "BorderElipseColor", "Windows.UI.Xaml.Media.SolidColorBrush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_JoystickControl_BorderElipseColor;
-                xamlMember.Setter = set_1_JoystickControl_BorderElipseColor;
+                xamlMember.Getter = get_61_JoystickControl_BorderElipseColor;
+                xamlMember.Setter = set_61_JoystickControl_BorderElipseColor;
                 break;
             case "ARDrone2Client.Windows.Input.JoystickControl.StickColor":
                 userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ARDrone2Client.Windows.Input.JoystickControl");
                 xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "StickColor", "Windows.UI.Xaml.Media.SolidColorBrush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_JoystickControl_StickColor;
-                xamlMember.Setter = set_2_JoystickControl_StickColor;
+                xamlMember.Getter = get_62_JoystickControl_StickColor;
+                xamlMember.Setter = set_62_JoystickControl_StickColor;
                 break;
             case "ARDrone2Client.Windows.Input.JoystickControl.X":
                 userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ARDrone2Client.Windows.Input.JoystickControl");
                 xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "X", "Single");
-                xamlMember.Getter = get_3_JoystickControl_X;
+                xamlMember.Getter = get_63_JoystickControl_X;
                 xamlMember.SetIsReadOnly();
                 break;
             case "ARDrone2Client.Windows.Input.JoystickControl.Y":
                 userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ARDrone2Client.Windows.Input.JoystickControl");
                 xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Y", "Single");
-                xamlMember.Getter = get_4_JoystickControl_Y;
+                xamlMember.Getter = get_64_JoystickControl_Y;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Location.Longitude":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Location");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Longitude", "Double");
+                xamlMember.Getter = get_65_Location_Longitude;
+                xamlMember.Setter = set_65_Location_Longitude;
+                break;
+            case "Bing.Maps.Location.Latitude":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Location");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Latitude", "Double");
+                xamlMember.Getter = get_66_Location_Latitude;
+                xamlMember.Setter = set_66_Location_Latitude;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.WalkingPolylineOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "WalkingPolylineOptions", "Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember.Getter = get_67_DirectionsRenderOptions_WalkingPolylineOptions;
+                xamlMember.Setter = set_67_DirectionsRenderOptions_WalkingPolylineOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.TransitPolylineOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitPolylineOptions", "Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember.Getter = get_68_DirectionsRenderOptions_TransitPolylineOptions;
+                xamlMember.Setter = set_68_DirectionsRenderOptions_TransitPolylineOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DrivingPolylineOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DrivingPolylineOptions", "Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember.Getter = get_69_DirectionsRenderOptions_DrivingPolylineOptions;
+                xamlMember.Setter = set_69_DirectionsRenderOptions_DrivingPolylineOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.ActiveRoutePolylineOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ActiveRoutePolylineOptions", "Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember.Getter = get_70_DirectionsRenderOptions_ActiveRoutePolylineOptions;
+                xamlMember.Setter = set_70_DirectionsRenderOptions_ActiveRoutePolylineOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.StepPushpinOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "StepPushpinOptions", "Bing.Maps.Directions.DirectionsPushpinRenderOptions");
+                xamlMember.Getter = get_71_DirectionsRenderOptions_StepPushpinOptions;
+                xamlMember.Setter = set_71_DirectionsRenderOptions_StepPushpinOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DisambiguationPushpinOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisambiguationPushpinOptions", "Bing.Maps.Directions.DirectionsPushpinRenderOptions");
+                xamlMember.Getter = get_72_DirectionsRenderOptions_DisambiguationPushpinOptions;
+                xamlMember.Setter = set_72_DirectionsRenderOptions_DisambiguationPushpinOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.EndWaypointColorBrush":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "EndWaypointColorBrush", "Windows.UI.Xaml.Media.Brush");
+                xamlMember.Getter = get_73_DirectionsRenderOptions_EndWaypointColorBrush;
+                xamlMember.Setter = set_73_DirectionsRenderOptions_EndWaypointColorBrush;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.MiddleWaypointColorBrush":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MiddleWaypointColorBrush", "Windows.UI.Xaml.Media.Brush");
+                xamlMember.Getter = get_74_DirectionsRenderOptions_MiddleWaypointColorBrush;
+                xamlMember.Setter = set_74_DirectionsRenderOptions_MiddleWaypointColorBrush;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.StartWaypointColorBrush":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "StartWaypointColorBrush", "Windows.UI.Xaml.Media.Brush");
+                xamlMember.Getter = get_75_DirectionsRenderOptions_StartWaypointColorBrush;
+                xamlMember.Setter = set_75_DirectionsRenderOptions_StartWaypointColorBrush;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.WaypointPushpinOptions":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "WaypointPushpinOptions", "Bing.Maps.Directions.DirectionsPushpinRenderOptions");
+                xamlMember.Getter = get_76_DirectionsRenderOptions_WaypointPushpinOptions;
+                xamlMember.Setter = set_76_DirectionsRenderOptions_WaypointPushpinOptions;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DisplayStepWarnings":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisplayStepWarnings", "Boolean");
+                xamlMember.Getter = get_77_DirectionsRenderOptions_DisplayStepWarnings;
+                xamlMember.Setter = set_77_DirectionsRenderOptions_DisplayStepWarnings;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DisplayItineraryItemHints":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisplayItineraryItemHints", "Boolean");
+                xamlMember.Getter = get_78_DirectionsRenderOptions_DisplayItineraryItemHints;
+                xamlMember.Setter = set_78_DirectionsRenderOptions_DisplayItineraryItemHints;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DisplayTransitIcons":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisplayTransitIcons", "Boolean");
+                xamlMember.Getter = get_79_DirectionsRenderOptions_DisplayTransitIcons;
+                xamlMember.Setter = set_79_DirectionsRenderOptions_DisplayTransitIcons;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DisplayManeuverIcons":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisplayManeuverIcons", "Boolean");
+                xamlMember.Getter = get_80_DirectionsRenderOptions_DisplayManeuverIcons;
+                xamlMember.Setter = set_80_DirectionsRenderOptions_DisplayManeuverIcons;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.DisplayDisclaimer":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisplayDisclaimer", "Boolean");
+                xamlMember.Getter = get_81_DirectionsRenderOptions_DisplayDisclaimer;
+                xamlMember.Setter = set_81_DirectionsRenderOptions_DisplayDisclaimer;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.AutoUpdateMapView":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AutoUpdateMapView", "Boolean");
+                xamlMember.Getter = get_82_DirectionsRenderOptions_AutoUpdateMapView;
+                xamlMember.Setter = set_82_DirectionsRenderOptions_AutoUpdateMapView;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.AutoDisplayDisambiguation":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AutoDisplayDisambiguation", "Boolean");
+                xamlMember.Getter = get_83_DirectionsRenderOptions_AutoDisplayDisambiguation;
+                xamlMember.Setter = set_83_DirectionsRenderOptions_AutoDisplayDisambiguation;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.AutoSetActiveRoute":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AutoSetActiveRoute", "Boolean");
+                xamlMember.Getter = get_84_DirectionsRenderOptions_AutoSetActiveRoute;
+                xamlMember.Setter = set_84_DirectionsRenderOptions_AutoSetActiveRoute;
+                break;
+            case "Bing.Maps.Directions.DirectionsRenderOptions.UseDefaultPushpins":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "UseDefaultPushpins", "Boolean");
+                xamlMember.Getter = get_85_DirectionsRenderOptions_UseDefaultPushpins;
+                xamlMember.Setter = set_85_DirectionsRenderOptions_UseDefaultPushpins;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.WeatherPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "WeatherPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_86_TrafficIncidentPushpinOptions_WeatherPushpinTemplate;
+                xamlMember.Setter = set_86_TrafficIncidentPushpinOptions_WeatherPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.AlertPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AlertPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_87_TrafficIncidentPushpinOptions_AlertPushpinTemplate;
+                xamlMember.Setter = set_87_TrafficIncidentPushpinOptions_AlertPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.ConstructionPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ConstructionPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_88_TrafficIncidentPushpinOptions_ConstructionPushpinTemplate;
+                xamlMember.Setter = set_88_TrafficIncidentPushpinOptions_ConstructionPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.RoadHazardPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "RoadHazardPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_89_TrafficIncidentPushpinOptions_RoadHazardPushpinTemplate;
+                xamlMember.Setter = set_89_TrafficIncidentPushpinOptions_RoadHazardPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.PlannedEventPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "PlannedEventPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_90_TrafficIncidentPushpinOptions_PlannedEventPushpinTemplate;
+                xamlMember.Setter = set_90_TrafficIncidentPushpinOptions_PlannedEventPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.OtherNewsPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "OtherNewsPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_91_TrafficIncidentPushpinOptions_OtherNewsPushpinTemplate;
+                xamlMember.Setter = set_91_TrafficIncidentPushpinOptions_OtherNewsPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.MiscellaneousPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MiscellaneousPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_92_TrafficIncidentPushpinOptions_MiscellaneousPushpinTemplate;
+                xamlMember.Setter = set_92_TrafficIncidentPushpinOptions_MiscellaneousPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.MassTransitPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "MassTransitPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_93_TrafficIncidentPushpinOptions_MassTransitPushpinTemplate;
+                xamlMember.Setter = set_93_TrafficIncidentPushpinOptions_MassTransitPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.DisabledVehiclePushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisabledVehiclePushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_94_TrafficIncidentPushpinOptions_DisabledVehiclePushpinTemplate;
+                xamlMember.Setter = set_94_TrafficIncidentPushpinOptions_DisabledVehiclePushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.CongestionPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "CongestionPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_95_TrafficIncidentPushpinOptions_CongestionPushpinTemplate;
+                xamlMember.Setter = set_95_TrafficIncidentPushpinOptions_CongestionPushpinTemplate;
+                break;
+            case "Bing.Maps.Traffic.TrafficIncidentPushpinOptions.AccidentPushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Traffic.TrafficIncidentPushpinOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AccidentPushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_96_TrafficIncidentPushpinOptions_AccidentPushpinTemplate;
+                xamlMember.Setter = set_96_TrafficIncidentPushpinOptions_AccidentPushpinTemplate;
+                break;
+            case "Bing.Maps.Pushpin.AssociateObject":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Pushpin");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AssociateObject", "Object");
+                xamlMember.Getter = get_97_Pushpin_AssociateObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Pushpin.Selected":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Pushpin");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Selected", "Boolean");
+                xamlMember.Getter = get_98_Pushpin_Selected;
+                xamlMember.Setter = set_98_Pushpin_Selected;
+                break;
+            case "Bing.Maps.Pushpin.Text":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Pushpin");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Text", "String");
+                xamlMember.Getter = get_99_Pushpin_Text;
+                xamlMember.Setter = set_99_Pushpin_Text;
+                break;
+            case "Bing.Maps.VenueMaps.VenueFloorDataSource.Items":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueFloorDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Items", "Windows.Foundation.Collections.IObservableVector<Object>");
+                xamlMember.Getter = get_100_VenueFloorDataSource_Items;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueFloorDataSource.Name":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueFloorDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_101_VenueFloorDataSource_Name;
+                xamlMember.Setter = set_101_VenueFloorDataSource_Name;
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Highlighted":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Highlighted", "Boolean");
+                xamlMember.Getter = get_102_VenueEntity_Highlighted;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.LineWidth":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "LineWidth", "Double");
+                xamlMember.Getter = get_103_VenueEntity_LineWidth;
+                xamlMember.Setter = set_103_VenueEntity_LineWidth;
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.HighlightColor":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "HighlightColor", "Windows.UI.Color");
+                xamlMember.Getter = get_104_VenueEntity_HighlightColor;
+                xamlMember.Setter = set_104_VenueEntity_HighlightColor;
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.FillColor":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "FillColor", "Windows.UI.Color");
+                xamlMember.Getter = get_105_VenueEntity_FillColor;
+                xamlMember.Setter = set_105_VenueEntity_FillColor;
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.LineColor":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "LineColor", "Windows.UI.Color");
+                xamlMember.Getter = get_106_VenueEntity_LineColor;
+                xamlMember.Setter = set_106_VenueEntity_LineColor;
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Type":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Type", "Bing.Maps.VenueMaps.VenueEntityType");
+                xamlMember.Getter = get_107_VenueEntity_Type;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.PhoneNumber":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "PhoneNumber", "String");
+                xamlMember.Getter = get_108_VenueEntity_PhoneNumber;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Name":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Name", "String");
+                xamlMember.Getter = get_109_VenueEntity_Name;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Outline":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Outline", "Bing.Maps.LocationCollection");
+                xamlMember.Getter = get_110_VenueEntity_Outline;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Id":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Id", "Int32");
+                xamlMember.Getter = get_111_VenueEntity_Id;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.FloorName":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "FloorName", "String");
+                xamlMember.Getter = get_112_VenueEntity_FloorName;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Floor":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Floor", "Bing.Maps.VenueMaps.Floor");
+                xamlMember.Getter = get_113_VenueEntity_Floor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Location":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Location", "Bing.Maps.Location");
+                xamlMember.Getter = get_114_VenueEntity_Location;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Description":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Description", "String");
+                xamlMember.Getter = get_115_VenueEntity_Description;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.CategoryName":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "CategoryName", "String");
+                xamlMember.Getter = get_116_VenueEntity_CategoryName;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.CategoryId":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "CategoryId", "String");
+                xamlMember.Getter = get_117_VenueEntity_CategoryId;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.BusinessId":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "BusinessId", "String");
+                xamlMember.Getter = get_118_VenueEntity_BusinessId;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.VenueMaps.VenueEntity.Address":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.VenueMaps.VenueEntity");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Address", "Bing.Maps.VenueMaps.VenueAddress");
+                xamlMember.Getter = get_119_VenueEntity_Address;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Directions.DirectionsPushpinRenderOptions.Visible":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsPushpinRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Visible", "Boolean");
+                xamlMember.Getter = get_120_DirectionsPushpinRenderOptions_Visible;
+                xamlMember.Setter = set_120_DirectionsPushpinRenderOptions_Visible;
+                break;
+            case "Bing.Maps.Directions.DirectionsPushpinRenderOptions.Offset":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsPushpinRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Offset", "Bing.Maps.PushpinOffset");
+                xamlMember.Getter = get_121_DirectionsPushpinRenderOptions_Offset;
+                xamlMember.Setter = set_121_DirectionsPushpinRenderOptions_Offset;
+                break;
+            case "Bing.Maps.Directions.DirectionsPushpinRenderOptions.PushpinTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsPushpinRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "PushpinTemplate", "Windows.UI.Xaml.Controls.ControlTemplate");
+                xamlMember.Getter = get_122_DirectionsPushpinRenderOptions_PushpinTemplate;
+                xamlMember.Setter = set_122_DirectionsPushpinRenderOptions_PushpinTemplate;
+                break;
+            case "Bing.Maps.Directions.DirectionsPolylineRenderOptions.Visible":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Visible", "Boolean");
+                xamlMember.Getter = get_123_DirectionsPolylineRenderOptions_Visible;
+                xamlMember.Setter = set_123_DirectionsPolylineRenderOptions_Visible;
+                break;
+            case "Bing.Maps.Directions.DirectionsPolylineRenderOptions.LineWidth":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "LineWidth", "Double");
+                xamlMember.Getter = get_124_DirectionsPolylineRenderOptions_LineWidth;
+                xamlMember.Setter = set_124_DirectionsPolylineRenderOptions_LineWidth;
+                break;
+            case "Bing.Maps.Directions.DirectionsPolylineRenderOptions.LineColor":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsPolylineRenderOptions");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "LineColor", "Windows.UI.Color");
+                xamlMember.Getter = get_125_DirectionsPolylineRenderOptions_LineColor;
+                xamlMember.Setter = set_125_DirectionsPolylineRenderOptions_LineColor;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.Warnings":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Warnings", "Windows.Foundation.Collections.IObservableVector<Object>");
+                xamlMember.Getter = get_126_ItineraryItemDataSource_Warnings;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.IconColor":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "IconColor", "Windows.UI.Xaml.Media.Brush");
+                xamlMember.Getter = get_127_ItineraryItemDataSource_IconColor;
+                xamlMember.Setter = set_127_ItineraryItemDataSource_IconColor;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.AutomationName":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AutomationName", "String");
+                xamlMember.Getter = get_128_ItineraryItemDataSource_AutomationName;
+                xamlMember.Setter = set_128_ItineraryItemDataSource_AutomationName;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.Hint":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Hint", "String");
+                xamlMember.Getter = get_129_ItineraryItemDataSource_Hint;
+                xamlMember.Setter = set_129_ItineraryItemDataSource_Hint;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.Icon":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Icon", "String");
+                xamlMember.Getter = get_130_ItineraryItemDataSource_Icon;
+                xamlMember.Setter = set_130_ItineraryItemDataSource_Icon;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.Index":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Index", "UInt32");
+                xamlMember.Getter = get_131_ItineraryItemDataSource_Index;
+                xamlMember.Setter = set_131_ItineraryItemDataSource_Index;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.RouteLegIndex":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "RouteLegIndex", "UInt32");
+                xamlMember.Getter = get_132_ItineraryItemDataSource_RouteLegIndex;
+                xamlMember.Setter = set_132_ItineraryItemDataSource_RouteLegIndex;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.TransitStop":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitStop", "String");
+                xamlMember.Getter = get_133_ItineraryItemDataSource_TransitStop;
+                xamlMember.Setter = set_133_ItineraryItemDataSource_TransitStop;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.TransitDepartureTime":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitDepartureTime", "String");
+                xamlMember.Getter = get_134_ItineraryItemDataSource_TransitDepartureTime;
+                xamlMember.Setter = set_134_ItineraryItemDataSource_TransitDepartureTime;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.TransitArrivalTime":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitArrivalTime", "String");
+                xamlMember.Getter = get_135_ItineraryItemDataSource_TransitArrivalTime;
+                xamlMember.Setter = set_135_ItineraryItemDataSource_TransitArrivalTime;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.TransitArrivalInstructionHeader":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitArrivalInstructionHeader", "String");
+                xamlMember.Getter = get_136_ItineraryItemDataSource_TransitArrivalInstructionHeader;
+                xamlMember.Setter = set_136_ItineraryItemDataSource_TransitArrivalInstructionHeader;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.TransitArrivalInstruction":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitArrivalInstruction", "String");
+                xamlMember.Getter = get_137_ItineraryItemDataSource_TransitArrivalInstruction;
+                xamlMember.Setter = set_137_ItineraryItemDataSource_TransitArrivalInstruction;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.TransitInstructionHeader":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitInstructionHeader", "String");
+                xamlMember.Getter = get_138_ItineraryItemDataSource_TransitInstructionHeader;
+                xamlMember.Setter = set_138_ItineraryItemDataSource_TransitInstructionHeader;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.DisplayIndex":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "DisplayIndex", "String");
+                xamlMember.Getter = get_139_ItineraryItemDataSource_DisplayIndex;
+                xamlMember.Setter = set_139_ItineraryItemDataSource_DisplayIndex;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.Instruction":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Instruction", "String");
+                xamlMember.Getter = get_140_ItineraryItemDataSource_Instruction;
+                xamlMember.Setter = set_140_ItineraryItemDataSource_Instruction;
+                break;
+            case "Bing.Maps.Directions.ItineraryItemDataSource.Distance":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.ItineraryItemDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Distance", "String");
+                xamlMember.Getter = get_141_ItineraryItemDataSource_Distance;
+                xamlMember.Setter = set_141_ItineraryItemDataSource_Distance;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataSource.Items":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Items", "Windows.Foundation.Collections.IObservableVector<Object>");
+                xamlMember.Getter = get_142_RouteLegDataSource_Items;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Directions.RouteLegDataSource.AutomationName":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AutomationName", "String");
+                xamlMember.Getter = get_143_RouteLegDataSource_AutomationName;
+                xamlMember.Setter = set_143_RouteLegDataSource_AutomationName;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataSource.Header":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Header", "String");
+                xamlMember.Getter = get_144_RouteLegDataSource_Header;
+                xamlMember.Setter = set_144_RouteLegDataSource_Header;
+                break;
+            case "Bing.Maps.Directions.TransitRouteDataSource.AutomationName":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.TransitRouteDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "AutomationName", "String");
+                xamlMember.Getter = get_145_TransitRouteDataSource_AutomationName;
+                xamlMember.Setter = set_145_TransitRouteDataSource_AutomationName;
+                break;
+            case "Bing.Maps.Directions.TransitRouteDataSource.Icon":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.TransitRouteDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Icon", "String");
+                xamlMember.Getter = get_146_TransitRouteDataSource_Icon;
+                xamlMember.Setter = set_146_TransitRouteDataSource_Icon;
+                break;
+            case "Bing.Maps.Directions.TransitRouteDataSource.Summary":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.TransitRouteDataSource");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Summary", "String");
+                xamlMember.Getter = get_147_TransitRouteDataSource_Summary;
+                xamlMember.Setter = set_147_TransitRouteDataSource_Summary;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.RouteLegHeaderItemTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "RouteLegHeaderItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_148_RouteLegDataTemplateSelector_RouteLegHeaderItemTemplate;
+                xamlMember.Setter = set_148_RouteLegDataTemplateSelector_RouteLegHeaderItemTemplate;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.GroupRouteLegHeaderItemTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "GroupRouteLegHeaderItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_149_RouteLegDataTemplateSelector_GroupRouteLegHeaderItemTemplate;
+                xamlMember.Setter = set_149_RouteLegDataTemplateSelector_GroupRouteLegHeaderItemTemplate;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.WalkItineraryItemTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "WalkItineraryItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_150_RouteLegDataTemplateSelector_WalkItineraryItemTemplate;
+                xamlMember.Setter = set_150_RouteLegDataTemplateSelector_WalkItineraryItemTemplate;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.TransitWaypointTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitWaypointTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_151_RouteLegDataTemplateSelector_TransitWaypointTemplate;
+                xamlMember.Setter = set_151_RouteLegDataTemplateSelector_TransitWaypointTemplate;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.TransitItineraryItemTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "TransitItineraryItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_152_RouteLegDataTemplateSelector_TransitItineraryItemTemplate;
+                xamlMember.Setter = set_152_RouteLegDataTemplateSelector_TransitItineraryItemTemplate;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.ItineraryItemTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "ItineraryItemTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_153_RouteLegDataTemplateSelector_ItineraryItemTemplate;
+                xamlMember.Setter = set_153_RouteLegDataTemplateSelector_ItineraryItemTemplate;
+                break;
+            case "Bing.Maps.Directions.RouteLegDataTemplateSelector.WaypointTemplate":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.RouteLegDataTemplateSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "WaypointTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_154_RouteLegDataTemplateSelector_WaypointTemplate;
+                xamlMember.Setter = set_154_RouteLegDataTemplateSelector_WaypointTemplate;
+                break;
+            case "Bing.Maps.Directions.DirectionsContainerSelector.UnSelectableStyle":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsContainerSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "UnSelectableStyle", "Windows.UI.Xaml.Style");
+                xamlMember.Getter = get_155_DirectionsContainerSelector_UnSelectableStyle;
+                xamlMember.Setter = set_155_DirectionsContainerSelector_UnSelectableStyle;
+                break;
+            case "Bing.Maps.Directions.DirectionsContainerSelector.SelectableStyle":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.DirectionsContainerSelector");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "SelectableStyle", "Windows.UI.Xaml.Style");
+                xamlMember.Getter = get_156_DirectionsContainerSelector_SelectableStyle;
+                xamlMember.Setter = set_156_DirectionsContainerSelector_SelectableStyle;
+                break;
+            case "Bing.Maps.Directions.Warning.Type":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.Warning");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Type", "Bing.Maps.Directions.WarningType");
+                xamlMember.Getter = get_157_Warning_Type;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Directions.Warning.Severity":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.Warning");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Severity", "Bing.Maps.Directions.WarningSeverity");
+                xamlMember.Getter = get_158_Warning_Severity;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Bing.Maps.Directions.Warning.Message":
+                userType = (global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Bing.Maps.Directions.Warning");
+                xamlMember = new global::AR.Drone2.Sample.W8.ARDrone2_Sample_W8_XamlTypeInfo.XamlMember(this, "Message", "String");
+                xamlMember.Getter = get_159_Warning_Message;
                 xamlMember.SetIsReadOnly();
                 break;
             }

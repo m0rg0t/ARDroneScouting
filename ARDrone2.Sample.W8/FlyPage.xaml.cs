@@ -50,6 +50,17 @@ namespace ARDrone2.Sample
             _Timer.Tick += _Timer_Tick;
             _Timer.Interval = new TimeSpan(0, 0, 0, 0, 500);
             _Timer.Start();
+
+            this.ControlMap.PointerPressedOverride += MyMap_PointerPressedOverride;
+        }
+
+        void MyMap_PointerPressedOverride(object sender, PointerRoutedEventArgs e)
+        {
+            Bing.Maps.Location l = new Bing.Maps.Location();
+            this.ControlMap.TryPixelToLocation(e.GetCurrentPoint(this.ControlMap).Position, out l);
+            Bing.Maps.Pushpin pushpin = new Bing.Maps.Pushpin();
+            pushpin.SetValue(Bing.Maps.MapLayer.PositionProperty, l);
+            this.ControlMap.Children.Add(pushpin);
         }
 
         private async void _Timer_Tick(object sender, object e)
