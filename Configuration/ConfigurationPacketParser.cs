@@ -8,6 +8,7 @@ namespace ARDrone2Client.Common.Configuration
     {
         public static bool TryUpdate(DroneConfiguration configuration, ConfigurationPacket packet)
         {
+            if (configuration == null || packet.Data == null) return false;
             Regex _reKeyValue = new Regex(@"(?<key>\w+:\w+) = (?<value>.*)");
             bool updated = false;
             using (var ms = new MemoryStream(packet.Data))
@@ -40,21 +41,24 @@ namespace ARDrone2Client.Common.Configuration
         }
         public static bool TryUpdate2(DroneConfiguration configuration, ConfigurationPacket packet)
         {
+            if (configuration == null || packet.Data == null) return false;
+            bool updated = false;
             using (var ms = new MemoryStream(packet.Data))
             using (var sr = new StreamReader(ms))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    TryUpdateLine(configuration, line);
+                    if (TryUpdateLine(configuration, line)) updated = true;
                 }
             }
-            return true;
+            return updated;
         }
         public static bool TryUpdateLine(DroneConfiguration configuration, string line)
         {
             var result = false;
-            Match match = null;// _reKeyValue.Match(line);
+            if (configuration == null || line == null) return false;
+            Match match = Regex.Match(line, @"(?<key>\w+:\w+) = (?<value>.*)");
             if (match.Success)
             {
                 string key = match.Groups["key"].Value;

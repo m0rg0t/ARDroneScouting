@@ -1,0 +1,2 @@
+namespace ARDrone2Client.Common.Configuration { public class DroneConfiguration { public readonly System.Collections.Generic.Dictionary<string,IConfigurationItem> Items = new System.Collections.Generic.Dictionary<string,IConfigurationItem>(); } }
+class Item : ARDrone2Client.Common.Configuration.IConfigurationItem { public string Key { get { return "general:name"; } } public object Value { get; private set; } public bool TryUpdate(string s) { if(s=="reject") return false; Value=s; return true; } }
